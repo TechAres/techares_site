@@ -29,6 +29,7 @@ export interface HeroProps {
     title: string;
     image: Omit<ImageProps, 'width' | 'height'>;
     button: LinkProps;
+    contents?: string;
   }[];
 }
 
@@ -63,7 +64,7 @@ export function Hero() {
                     'absolute inset-0 -z-1  bg-accent-700 bg-cover bg-no-repeat bg-blend-luminosity [background-position:top_center] [transform:scale(1)] [transition:7000ms_ease,opacity_1500ms_ease-in]',
                     styles['hero-bg'],
                     // before
-                    'before:absolute before:inset-0 before:bg-[#EDF8FE] before:opacity-80  dark:before:bg-accent-900',
+                    'before:absolute before:inset-0 before:bg-[#EDF8FE] before:opacity-50  dark:before:bg-accent-900',
                     // after
                     'after:absolute after:inset-0  after:[background:linear-gradient(180deg,rgba(255,255,255,0)_0%,#FFFFFF_100%)]  dark:after:[background:linear-gradient(180deg,rgba(20,20,22,0.00)_0%,#141416_100%)]'
                   )}
@@ -79,9 +80,15 @@ export function Hero() {
                     )}
                   >
                     <div className="space-y-6 md:space-y-8">
-                      <h1 className="font-secondary text-2xl font-semibold uppercase leading-[1.1] md:text-3xl lg:text-4xl">
+                      <h1 className="font-secondary text-2xl font-semibold uppercase leading-[1.1] md:text-3xl lg:text-3xl">
                         {item.title}
                       </h1>
+                      <p>
+                        Embrace our visionary software development services to
+                        navigate the ever-changing business landscape. We help
+                        you stay ahead of industry trends to secure your market
+                        dominance and achieve unrivaled success.
+                      </p>
                       <Button asChild className={cn('rounded-full')}>
                         <CustomLink
                           aria-label={item.button.label}

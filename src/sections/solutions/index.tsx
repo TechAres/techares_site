@@ -6,6 +6,7 @@ import { SectionHeadingWithoutStylingProps } from '@/src/components/section-head
 import Image from 'next/image';
 
 import patternOne from 'public/assets/images/about/pattern-1.png';
+import image1 from 'public/assets/images/solutions/erp.jpg';
 
 export interface AboutSectionProps {
   images: {
@@ -22,40 +23,58 @@ export interface AboutSectionProps {
   description?: string;
 }
 
-export function AboutSection() {
+export function Solutions() {
   const { images, sectionHeading, keyPoints, description } = aboutSectionData;
   return (
     <section className="section-padding-primary overflow-hidden">
       <Container>
-        <div className="grid items-center gap-12 lg:grid-cols-[.92fr_1fr] 2xl:gap-20">
-          {/* Content  */}
-          <div className="lg:order-2" data-aos="fade-left" data-aos-delay="200">
-            {/* <SectionHeading {...sectionHeading} /> */}
-            <h2 className="font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
-              Award-winning Software Development Company
-            </h2>
-            <p>
-              Techares is a leading software development company that
-              specializes in providing a full range of enterprise solutions to
-              satisfy the particular needs of your company. We are more than
-              just a team of skilled developers and designers; we are visionary
-              creators who believe in transforming possibilities into realities.
-            </p>
+        <div>
+          <h2 className="font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
+            Solutions
+          </h2>
+          <p>
+            We’re More than Just Developers. We Solve Real-world Problems By
+            Creating Better Digital Solutions.
+          </p>
+        </div>
+        <div>
+          <p>
+            As a full-stack software development agency, we make extraordinary
+            things that engage your users.
+          </p>
+        </div>
+        <div>
+          <div className="grid grid-cols-3 gap-4">
+            <div>
+              <Image
+                src={image1}
+                alt={images.image1.alt}
+                width="300"
+                height="300"
+                className=" object-cover object-top"
+              />
+            </div>
+            <div>09</div>
+          </div>
+        </div>
 
-            <p className="mt-2">
-              Our goal is to deliver innovative, tailor-made software solutions
-              that not only meet but exceed expectations, paving the way for our
-              client's success. We embrace the latest trends and best practices,
-              always staying one step ahead to ensure our clients gain a
-              competitive advantage in their markets.
-            </p>
+        {/* <div className="grid items-center gap-12 lg:grid-cols-[.92fr_1fr] 2xl:gap-20">
+         
+          <div className="lg:order-2" data-aos="fade-left" data-aos-delay="200">
+        
+            <h2 className="font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">Award-winning Software Development Company</h2>
+            <p>Techares is a leading software development company that specializes in providing a full range of enterprise solutions to satisfy the particular needs of your company. We are more than just a team of skilled developers and designers; we are visionary creators who believe in transforming possibilities into realities.</p>
+
+            <p className="mt-2">Our goal is to deliver innovative, tailor-made software solutions that not only meet but exceed expectations, paving the way for our client's success. We embrace the latest trends and best practices, always staying one step ahead to ensure our clients gain a competitive advantage in their markets.</p>
+            
+           
           </div>
 
-          {/* Images  */}
+        
           {images && (
             <div className="mx-auto text-center">
               <div className="relative mx-auto grid max-w-[580px] grid-cols-2 gap-2.5 overflow-hidden">
-                {/* Image 1  */}
+               
                 <div className="relative flex justify-end overflow-hidden">
                   <div
                     className="relative z-[2] mt-auto"
@@ -74,7 +93,7 @@ export function AboutSection() {
                     </div>
                   </div>
 
-                  {/* Pattern  */}
+                 
                   <Image
                     src={patternOne.src}
                     width={383}
@@ -88,7 +107,7 @@ export function AboutSection() {
                   />
                 </div>
 
-                {/* Image 2  */}
+               
                 <div className="flex overflow-hidden">
                   <Image
                     src={images.image2.src}
@@ -101,7 +120,7 @@ export function AboutSection() {
                   />
                 </div>
 
-                {/* Image 3  */}
+                
                 <div className="ml-auto flex max-w-[250px] justify-end overflow-hidden">
                   <Image
                     src={images.image3.src}
@@ -114,7 +133,7 @@ export function AboutSection() {
                   />
                 </div>
 
-                {/* Image 4 */}
+               
                 <div className="overflow-hidden">
                   <Image
                     src={images.image4.src}
@@ -145,7 +164,7 @@ export function AboutSection() {
               </div>
             </div>
           )}
-        </div>
+        </div> */}
       </Container>
     </section>
   );

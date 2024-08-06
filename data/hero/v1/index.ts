@@ -7,7 +7,10 @@ export const heroData: HeroProps = {
         src: '/assets/images/hero/hero-1.jpg',
         alt: 'hero 1',
       },
-      title: 'Empowering Your Digital Future',
+      title:
+        'Modernizing And Transforming Businesses Digitally To Move Forward',
+      contents:
+        'Embrace our visionary software development services to navigate the ever-changing business landscape. We help you stay ahead of industry trends to secure your market dominance and achieve unrivaled success',
       button: {
         label: 'Discover More',
         href: '/',
@@ -15,10 +18,11 @@ export const heroData: HeroProps = {
     },
     {
       image: {
-        src: '/assets/images/hero/hero-11.jpeg',
+        src: '/assets/images/hero/hero-11.jpg',
         alt: 'hero 1',
       },
-      title: 'Empowering Your Digital Future',
+      title:
+        'Modernizing And Transforming Businesses Digitally To Move Forward',
       button: {
         label: 'Discover More',
         href: '/',
@@ -26,10 +30,11 @@ export const heroData: HeroProps = {
     },
     {
       image: {
-        src: '/assets/images/hero/hero-12.jpeg',
+        src: '/assets/images/hero/hero-12.jpg',
         alt: 'hero 1',
       },
-      title: 'Empowering Your Digital Future',
+      title:
+        'Modernizing And Transforming Businesses Digitally To Move Forward',
       button: {
         label: 'Discover More',
         href: '/',
