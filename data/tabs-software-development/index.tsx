@@ -1,4 +1,4 @@
-import { AboutSectionProps } from '@/src/sections/tabs-software-development';
+
 
 function Icon1() {
   return (
@@ -31,7 +31,7 @@ function Icon2() {
   );
 }
 
-export const aboutSectionData: AboutSectionProps = {
+export const aboutSectionData = {
   images: {
     image1: {
       src: '/assets/images/about/about-1.png',

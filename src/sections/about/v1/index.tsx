@@ -45,7 +45,7 @@ export function AboutSection() {
             <p className="mt-2">
               Our goal is to deliver innovative, tailor-made software solutions
               that not only meet but exceed expectations, paving the way for our
-              client's success. We embrace the latest trends and best practices,
+              clients success. We embrace the latest trends and best practices,
               always staying one step ahead to ensure our clients gain a
               competitive advantage in their markets.
             </p>

@@ -9,7 +9,7 @@ interface SoftwareDevelopmentPost {
   imageUrl?: string;
 }
 
-interface StandardPost {
+export interface StandardPost {
   id: number;
   title: string;
   titleone: string;
