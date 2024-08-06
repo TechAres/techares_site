@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "tsc": "npx tsc",
     "tsc-watch": "npx tsc --w",
     "prettier": "prettier --check --ignore-path .gitignore .",
