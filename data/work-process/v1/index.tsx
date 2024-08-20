@@ -2,44 +2,59 @@ import { WorkprocessSectionProps } from '@/src/sections/work-process/v1';
 
 export const workprocessSectionData: WorkprocessSectionProps = {
   texts: [
-    'Work process',
-    'IT Sloution',
-    'Work process',
-    'agency',
-    'Work process',
-    'Tech',
+    'Custom Software Development',
+    'IT Consulting',
+    'IT Outsourcing',
+    'Mobile App Development',
+    'Web Development',
+    'Blockchain Development',
+    'UI/UX Design',
+    'Quality Assurance and Testing',
+    'Cloud Application Development',
+    'E-commerce Solutions',
+    'Database Development and Integration',
+    'Enterprise Software Solutions',
+    'IoT (Internet of Things) Development'
   ],
   cards: [
     {
       icon: <Icon1 />,
-      title: 'Cyber Scape Defend',
+      title: 'Innovation',
       description:
-        'Corporate restructuring refers to the design process of reorganizing a man company won as out Corporate',
+        'We embrace creativity and innovation, constantly exploring new technologies to deliver cutting-edge solutions',
       count: '01',
       link: '',
     },
     {
       icon: <Icon2 />,
-      title: 'SmartTech Integrations',
+      title: 'Integrity',
       description:
-        'Corporate restructuring refers to the design process of reorganizing a man company won as out Corporate',
+        'We conduct our business with the highest level of integrity, ensuring transparency and honesty in all our interactions',
       count: '02',
       link: '',
     },
     {
       icon: <Icon3 />,
-      title: 'Data Vista Analytics',
+      title: 'Excellence',
       description:
-        'Corporate restructuring refers to the design process of reorganizing a man company won as out Corporate',
+        'We are committed to excellence, delivering high-quality solutions that exceed client expectations',
       count: '03',
       link: '',
     },
     {
       icon: <Icon4 />,
-      title: 'Data Vista Analytics',
+      title: 'Customer-Centricity',
       description:
-        'Corporate restructuring refers to the design process of reorganizing a man company won as out Corporate',
+        'We prioritize our clients needs, working collaboratively to deliver customized solutions that drive success',
       count: '04',
+      link: '',
+    },
+    {
+      icon: <Icon2 />,
+      title: 'Collaboration',
+      description:
+        'We believe in the power of teamwork, fostering a collaborative environment that encourages knowledge sharing and growth',
+      count: '05',
       link: '',
     },
   ],

@@ -31,11 +31,13 @@ export default function Page() {
         ]}
       />
       <AboutSection />
+      <WorkprocessSection />
+      <AboutSectionTwo />
       <CtaSection />
       <TestimonialSection />
       <StatisticsSection />
-      <AboutSectionTwo />
-      <WorkprocessSection />
+
+
       <Footer />
     </>
   );
