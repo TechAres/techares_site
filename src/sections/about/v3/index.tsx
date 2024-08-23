@@ -24,7 +24,7 @@ export function AboutSectionThree() {
             <Container>
                 <div className="grid items-center gap-12 lg:grid-cols-[.92fr_1fr] 2xl:gap-20">
                     {/* Content  */}
-                    <div className="lg:order-1" data-aos="fade-left" data-aos-delay="200">
+                    <div data-aos="fade-left" data-aos-delay="200">
                         <h2 className="font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
                             {sectionHeading.title}
                         </h2>
