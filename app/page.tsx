@@ -17,6 +17,7 @@ import { StatisticsSection } from '@/src/sections/statistics/v1';
 import { TeamSection } from '@/src/sections/team/v1';
 import { TestimonialSection } from '@/src/sections/testimonial/v1';
 import { Metadata } from 'next';
+import { WorkprocessSection } from '@/src/sections/work-process/v1';
 
 export const metadata: Metadata = {
   title: 'Techlab | Home',
@@ -30,8 +31,10 @@ export default function Page() {
       <Hero />
       <AboutSection />
       <Tabs />
-      <PricingSection />
+      <WorkprocessSection />
+      {/* <PricingSection /> */}
       <CtaSection />
+      
       <ProjectSection {...projectSectionData} />
       <WhyChooseSection />
       {/* <ServiceSection className="!pb-0" {...serviceSectionData} />

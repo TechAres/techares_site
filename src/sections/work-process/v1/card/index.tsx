@@ -5,7 +5,12 @@ import { cn } from '@/src/utils/shadcn';
 export interface WorkprocessCardProps {
   icon: React.ReactNode;
   title: string;
+  subtitleone: string;
   description: string;
+  subtitletwo: string;
+  descriptiontwo: string;
+  subtitlethree: string;
+  descriptionthree: string;
   link: string;
   count: string;
 }
@@ -13,20 +18,38 @@ export interface WorkprocessCardProps {
 export function WorkprocessCard({
   icon,
   title,
+  subtitleone,
   description,
+  subtitletwo,
+  descriptiontwo,
+  subtitlethree,
+  descriptionthree,
   count,
   link,
 }: WorkprocessCardProps) {
   return (
-    <div className="relative whitespace-normal rounded-5 bg-accent-100 p-6  dark:bg-accent-700 lg:p-10">
+    <div className="relative whitespace-normal rounded-5 bg-accent-100 p-6 border-2 rounded-sm border-solid h-full border-zinc-200  dark:bg-accent-700 lg:p-10">
       <div className="flex items-center gap-5">
-        <div className="relative flex-none">
+        {/* <div className="relative flex-none">
           <span className="absolute -top-3 inline-block h-16 w-16 rounded-full bg-primary"></span>
           <span className="relative -left-3 top-3 z-1 text-white">{icon}</span>
-        </div>
+        </div> */}
         <h3 className="h3 text-accent-900 dark:text-white">{title}</h3>
+        
       </div>
-      <p className="mt-6">{description}</p>
+      <div>
+        <h5 className='text-base font-semibold text-blue-400'>{subtitleone}</h5>
+        <p className="">{description}</p>
+      </div>
+      <div>
+        <h5 className='text-base font-semibold text-blue-400'>{subtitletwo}</h5>
+        <p className="">{descriptiontwo}</p>
+      </div>
+      <div>
+        <h5 className='text-base font-semibold text-blue-400'>{subtitlethree}</h5>
+        <p className="">{descriptionthree}</p>
+      </div>
+      
       <div className="mt-7 pr-[120px]">
         <Button
           asChild

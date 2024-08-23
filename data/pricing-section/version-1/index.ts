@@ -37,7 +37,7 @@ export const pricingSectionData: PricingSectionProps = {
       duration: '/month',
       isPopular: false,
       button: {
-        href: './assets/images/solutions/erp.jpg',
+        href: './assets/images/solutions/2.png',
         label: 'Select Plan',
       },
     },
@@ -54,7 +54,7 @@ export const pricingSectionData: PricingSectionProps = {
       duration: '/month',
       isPopular: false,
       button: {
-        href: './assets/images/solutions/erp.jpg',
+        href: './assets/images/solutions/3.png',
         label: 'Select Plan',
       },
     },
@@ -71,7 +71,7 @@ export const pricingSectionData: PricingSectionProps = {
       duration: '/month',
       isPopular: false,
       button: {
-        href: './assets/images/solutions/erp.jpg',
+        href: './assets/images/solutions/4.png',
         label: 'Select Plan',
       },
     },
@@ -88,7 +88,7 @@ export const pricingSectionData: PricingSectionProps = {
       duration: '/month',
       isPopular: false,
       button: {
-        href: './assets/images/solutions/erp.jpg',
+        href: './assets/images/solutions/5.png',
         label: 'Select Plan',
       },
     },
@@ -105,7 +105,7 @@ export const pricingSectionData: PricingSectionProps = {
       duration: '/month',
       isPopular: false,
       button: {
-        href: './assets/images/solutions/erp.jpg',
+        href: './assets/images/solutions/6.png',
         label: 'Select Plan',
       },
     },
@@ -122,7 +122,7 @@ export const pricingSectionData: PricingSectionProps = {
       duration: '/month',
       isPopular: false,
       button: {
-        href: './assets/images/solutions/erp.jpg',
+        href: './assets/images/solutions/7.png',
         label: 'Select Plan',
       },
     },
@@ -139,7 +139,7 @@ export const pricingSectionData: PricingSectionProps = {
       duration: '/month',
       isPopular: false,
       button: {
-        href: './assets/images/solutions/erp.jpg',
+        href: './assets/images/solutions/8.png',
         label: 'Select Plan',
       },
     },
@@ -156,7 +156,7 @@ export const pricingSectionData: PricingSectionProps = {
       duration: '/month',
       isPopular: false,
       button: {
-        href: './assets/images/solutions/erp.jpg',
+        href: './assets/images/solutions/9.png',
         label: 'Select Plan',
       },
     },
