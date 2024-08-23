@@ -66,7 +66,7 @@ export const projectSectionData: ProjectSectionProps = {
     {
       slug: '/project/single',
       image: {
-        src: '/assets/images/project/4.png',
+        src: '/assets/images/project/5.png',
         alt: 'portfolio-1',
       },
       title: 'Insurance',
@@ -80,7 +80,7 @@ export const projectSectionData: ProjectSectionProps = {
     {
       slug: '/project/single',
       image: {
-        src: '/assets/images/project/4.png',
+        src: '/assets/images/project/6.png',
         alt: 'portfolio-1',
       },
       title: 'Hotel',
@@ -94,7 +94,7 @@ export const projectSectionData: ProjectSectionProps = {
     {
       slug: '/project/single',
       image: {
-        src: '/assets/images/project/4.png',
+        src: '/assets/images/project/7.png',
         alt: 'portfolio-1',
       },
       title: 'Manufacturing',
@@ -108,7 +108,7 @@ export const projectSectionData: ProjectSectionProps = {
     {
       slug: '/project/single',
       image: {
-        src: '/assets/images/project/4.png',
+        src: '/assets/images/project/8.png',
         alt: 'portfolio-1',
       },
       title: 'Supply Chain',
@@ -122,7 +122,7 @@ export const projectSectionData: ProjectSectionProps = {
     {
       slug: '/project/single',
       image: {
-        src: '/assets/images/project/4.png',
+        src: '/assets/images/project/9.png',
         alt: 'portfolio-1',
       },
       title: 'Logistics',
@@ -136,7 +136,7 @@ export const projectSectionData: ProjectSectionProps = {
     {
       slug: '/project/single',
       image: {
-        src: '/assets/images/project/4.png',
+        src: '/assets/images/project/10.png',
         alt: 'portfolio-1',
       },
       title: 'Entertainment',
@@ -150,7 +150,7 @@ export const projectSectionData: ProjectSectionProps = {
     {
       slug: '/project/single',
       image: {
-        src: '/assets/images/project/4.png',
+        src: '/assets/images/project/11.png',
         alt: 'portfolio-1',
       },
       title: 'Real Estate',
@@ -164,7 +164,7 @@ export const projectSectionData: ProjectSectionProps = {
     {
       slug: '/project/single',
       image: {
-        src: '/assets/images/project/4.png',
+        src: '/assets/images/project/12.png',
         alt: 'portfolio-1',
       },
       title: 'Social Networking',

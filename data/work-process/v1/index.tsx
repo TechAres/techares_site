@@ -19,42 +19,137 @@ export const workprocessSectionData: WorkprocessSectionProps = {
   cards: [
     {
       icon: <Icon1 />,
-      title: 'Innovation',
+      title: 'ERP',
+      subtitleone: 'ERP Implementation',
       description:
-        'We embrace creativity and innovation, constantly exploring new technologies to deliver cutting-edge solutions',
+        'Seamless integration of ERP systems.',
+      subtitletwo: 'ERP Implementation',
+      descriptiontwo:
+        'Corporate restructuring refers to the design process of reorganizing a man company won as out Corporate',
+      subtitlethree: 'ERP Implementation',
+      descriptionthree:
+        'Corporate restructuring refers to the design process of reorganizing a man company won as out Corporate',
       count: '01',
       link: '',
     },
     {
       icon: <Icon2 />,
-      title: 'Integrity',
+      title: 'CRM',
+      subtitleone: 'CRM Development',
       description:
-        'We conduct our business with the highest level of integrity, ensuring transparency and honesty in all our interactions',
+        'Custom CRM solutions to manage customer relationships.',
+      subtitletwo: 'CRM Integration',
+      descriptiontwo:
+        'Integrating CRM with existing systems.',
+      subtitlethree: 'CRM Support',
+      descriptionthree:
+        'Ensuring your CRM system is always up-to-date.',
       count: '02',
       link: '',
     },
     {
       icon: <Icon3 />,
-      title: 'Excellence',
+      title: 'Inventory',
+      subtitleone: 'Inventory Management Systems',
       description:
-        'We are committed to excellence, delivering high-quality solutions that exceed client expectations',
+        'Efficiently track and manage inventory.',
+      subtitletwo: 'Automated Inventory Solutions',
+      descriptiontwo:
+        'Reducing manual errors with automation.',
+      subtitlethree: 'Real-time Inventory Tracking',
+      descriptionthree:
+        'Keeping track of inventory in real-time.',
       count: '03',
       link: '',
     },
     {
       icon: <Icon4 />,
-      title: 'Customer-Centricity',
+      title: 'Enterprise Applications',
+      subtitleone: 'Enterprise Resource Planning',
       description:
-        'We prioritize our clients needs, working collaboratively to deliver customized solutions that drive success',
+        'Comprehensive ERP solutions.',
+      subtitletwo: 'Customer Relationship Management',
+      descriptiontwo:
+        'Effective CRM systems.',
+      subtitlethree: 'Human Resource Management',
+      descriptionthree:
+        'Streamlining HR processes.',
       count: '04',
       link: '',
     },
     {
-      icon: <Icon2 />,
-      title: 'Collaboration',
+      icon: <Icon4 />,
+      title: 'Data Analytics',
+      subtitleone: 'Business Intelligence',
       description:
-        'We believe in the power of teamwork, fostering a collaborative environment that encourages knowledge sharing and growth',
+        'Turning data into actionable insights.',
+      subtitletwo: 'Predictive Analytics',
+      descriptiontwo:
+        'Forecasting future trends and behaviors.',
+      subtitlethree: 'Big Data Solutions',
+      descriptionthree:
+        'Managing and analyzing large data sets.',
       count: '05',
+      link: '',
+    },
+    {
+      icon: <Icon4 />,
+      title: 'IT Service Management',
+      subtitleone: 'Service Desk Solutions',
+      description:
+        'Efficiently managing IT support',
+      subtitletwo: 'IT Asset Management',
+      descriptiontwo:
+        'Tracking and managing IT assets.',
+      subtitlethree: 'Change Management',
+      descriptionthree:
+        'Managing changes in IT infrastructure.',
+      count: '06',
+      link: '',
+    },
+    {
+      icon: <Icon4 />,
+      title: 'Ecommerce',
+      subtitleone: 'Ecommerce Platform Development',
+      description:
+        'Building robust online stores',
+      subtitletwo: 'Payment Gateway Integration',
+      descriptiontwo:
+        'Secure and reliable payment solutions.',
+      subtitlethree: 'Ecommerce Optimization',
+      descriptionthree:
+        'Enhancing performance and user experience.',
+      count: '07',
+      link: '',
+    },
+    {
+      icon: <Icon4 />,
+      title: 'Digital Twin',
+      subtitleone: 'Digital Twin Development',
+      description:
+        'Creating virtual replicas of physical assets.',
+      subtitletwo: 'Simulation and Modeling',
+      descriptiontwo:
+        'Testing and optimizing processes.',
+      subtitlethree: 'Real-time Monitoring',
+      descriptionthree:
+        'Keeping track of real-world assets in real-time.',
+      count: '08',
+      link: '',
+    },
+    {
+      icon: <Icon4 />,
+      title: 'Web Portals',
+      subtitleone: 'Customer Portals',
+      description:
+        'Enhancing customer engagement and satisfaction.',
+      subtitletwo: 'Employee Portals',
+      descriptiontwo:
+        'Streamlining internal communications and processes.',
+      subtitlethree: 'Vendor Portals',
+      descriptionthree:
+        'Efficiently managing vendor relationships.',
+      count: '09',
       link: '',
     },
   ],

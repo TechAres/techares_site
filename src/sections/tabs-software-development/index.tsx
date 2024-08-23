@@ -53,7 +53,7 @@ const categories = [
           'E-commerce Development: Building secure and scalable online stores.',
         titlethree:
           'Content Management Systems (CMS): Easy-to-manage web platforms for your content.',
-        imageUrl: 'https://dummyimage.com/300x300/000/fff', // Replace with actual image URL
+        imageUrl: 'assets/images/landing/software/2.png', // Replace with actual image URL
       },
     ] as StandardPost[],
   },
@@ -68,7 +68,7 @@ const categories = [
         titletwo: 'Android App Development: Innovative apps for Android users.',
         titlethree:
           'Cross-Platform App Development: Unified apps for multiple platforms.',
-        imageUrl: 'https://dummyimage.com/300x300/000/fff', // Replace with actual image URL
+        imageUrl: 'assets/images/landing/software/3.png', // Replace with actual image URL
       },
     ] as StandardPost[],
   },
@@ -84,7 +84,7 @@ const categories = [
           'Smart Contract Development: Automated and trustworthy contract solutions.',
         titlethree:
           'Blockchain Consulting: Expert guidance on blockchain technology.',
-        imageUrl: 'https://dummyimage.com/300x300/000/fff', // Replace with actual image URL
+        imageUrl: 'assets/images/landing/software/4.png', // Replace with actual image URL
       },
     ] as StandardPost[],
   },
@@ -99,25 +99,11 @@ const categories = [
           '3D Modeling and Design: High-quality 3D assets for the metaverse.',
         titlethree:
           'Metaverse Integration: Seamless integration with existing systems.',
-        imageUrl: 'https://dummyimage.com/300x300/000/fff', // Replace with actual image URL
+        imageUrl: 'assets/images/landing/software/5.png', // Replace with actual image URL
       },
     ] as StandardPost[],
   },
-  {
-    name: 'Metaverse Development',
-    posts: [
-      {
-        id: 1,
-        heading: 'Metaverse Development',
-        titleone: 'Virtual World Creation: Immersive digital environments.',
-        titletwo:
-          '3D Modeling and Design: High-quality 3D assets for the metaverse.',
-        titlethree:
-          'Metaverse Integration: Seamless integration with existing systems.',
-        imageUrl: 'https://dummyimage.com/300x300/000/fff', // Replace with actual image URL
-      },
-    ] as StandardPost[],
-  },
+ 
   {
     name: 'Web3 Development',
     posts: [
@@ -128,7 +114,7 @@ const categories = [
           'Decentralized Applications (DApps): Cutting-edge decentralized solutions.',
         titletwo: 'NFT Development: Unique and secure digital assets.',
         titlethree: 'Web3 Consulting: Strategic advice on Web3 technologies.',
-        imageUrl: 'https://dummyimage.com/300x300/000/fff', // Replace with actual image URL
+        imageUrl: 'assets/images/landing/software/6.png', // Replace with actual image URL
       },
     ] as StandardPost[],
   },
@@ -144,7 +130,7 @@ const categories = [
           'Technology Assessment: Evaluating and optimizing your tech stack.',
         titlethree:
           'Security Consulting: Ensuring your systems are secure and compliant.',
-        imageUrl: 'https://dummyimage.com/300x300/000/fff', // Replace with actual image URL
+        imageUrl: 'assets/images/landing/software/7.png', // Replace with actual image URL
       },
     ] as StandardPost[],
   },
@@ -160,7 +146,7 @@ const categories = [
           'Data Analytics and Insights: Turning data into actionable insights.',
         titlethree:
           'Cloud Migration: Moving your operations to the cloud seamlessly.',
-        imageUrl: 'https://dummyimage.com/300x300/000/fff', // Replace with actual image URL
+        imageUrl: 'assets/images/landing/software/8.png', // Replace with actual image URL
       },
     ] as StandardPost[],
   },
@@ -175,7 +161,7 @@ const categories = [
           'Social Media Marketing: Engaging your audience on social platforms.',
         titlethree:
           'Content Marketing: Creating compelling content to attract and retain customers.',
-        imageUrl: 'https://dummyimage.com/300x300/000/fff', // Replace with actual image URL
+        imageUrl: 'assets/images/landing/software/9.png', // Replace with actual image URL
       },
     ] as StandardPost[],
   },

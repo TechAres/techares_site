@@ -34,7 +34,7 @@ function Icon2() {
 export const homeWhyChooseData: HomeWhyChooseProps = {
   images: {
     image1: {
-      src: '/assets/images/about/about-1.png',
+      src: '/assets/images/landing/whychoose.png',
       alt: 'about one',
       width: 750,
       height: 500,
