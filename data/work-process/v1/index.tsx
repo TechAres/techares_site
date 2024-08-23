@@ -2,12 +2,19 @@ import { WorkprocessSectionProps } from '@/src/sections/work-process/v1';
 
 export const workprocessSectionData: WorkprocessSectionProps = {
   texts: [
-    'Work process',
-    'IT Sloution',
-    'Work process',
-    'agency',
-    'Work process',
-    'Tech',
+    'Custom Software Development',
+    'IT Consulting',
+    'IT Outsourcing',
+    'Mobile App Development',
+    'Web Development',
+    'Blockchain Development',
+    'UI/UX Design',
+    'Quality Assurance and Testing',
+    'Cloud Application Development',
+    'E-commerce Solutions',
+    'Database Development and Integration',
+    'Enterprise Software Solutions',
+    'IoT (Internet of Things) Development'
   ],
   cards: [
     {
@@ -16,7 +23,7 @@ export const workprocessSectionData: WorkprocessSectionProps = {
       subtitleone: 'ERP Implementation',
       description:
         'Seamless integration of ERP systems.',
-       subtitletwo: 'ERP Implementation',
+      subtitletwo: 'ERP Implementation',
       descriptiontwo:
         'Corporate restructuring refers to the design process of reorganizing a man company won as out Corporate',
       subtitlethree: 'ERP Implementation',
@@ -46,7 +53,7 @@ export const workprocessSectionData: WorkprocessSectionProps = {
       subtitleone: 'Inventory Management Systems',
       description:
         'Efficiently track and manage inventory.',
-       subtitletwo: 'Automated Inventory Solutions',
+      subtitletwo: 'Automated Inventory Solutions',
       descriptiontwo:
         'Reducing manual errors with automation.',
       subtitlethree: 'Real-time Inventory Tracking',
@@ -61,7 +68,7 @@ export const workprocessSectionData: WorkprocessSectionProps = {
       subtitleone: 'Enterprise Resource Planning',
       description:
         'Comprehensive ERP solutions.',
-       subtitletwo: 'Customer Relationship Management',
+      subtitletwo: 'Customer Relationship Management',
       descriptiontwo:
         'Effective CRM systems.',
       subtitlethree: 'Human Resource Management',
@@ -76,7 +83,7 @@ export const workprocessSectionData: WorkprocessSectionProps = {
       subtitleone: 'Business Intelligence',
       description:
         'Turning data into actionable insights.',
-       subtitletwo: 'Predictive Analytics',
+      subtitletwo: 'Predictive Analytics',
       descriptiontwo:
         'Forecasting future trends and behaviors.',
       subtitlethree: 'Big Data Solutions',
@@ -91,7 +98,7 @@ export const workprocessSectionData: WorkprocessSectionProps = {
       subtitleone: 'Service Desk Solutions',
       description:
         'Efficiently managing IT support',
-       subtitletwo: 'IT Asset Management',
+      subtitletwo: 'IT Asset Management',
       descriptiontwo:
         'Tracking and managing IT assets.',
       subtitlethree: 'Change Management',
@@ -106,7 +113,7 @@ export const workprocessSectionData: WorkprocessSectionProps = {
       subtitleone: 'Ecommerce Platform Development',
       description:
         'Building robust online stores',
-       subtitletwo: 'Payment Gateway Integration',
+      subtitletwo: 'Payment Gateway Integration',
       descriptiontwo:
         'Secure and reliable payment solutions.',
       subtitlethree: 'Ecommerce Optimization',
@@ -121,7 +128,7 @@ export const workprocessSectionData: WorkprocessSectionProps = {
       subtitleone: 'Digital Twin Development',
       description:
         'Creating virtual replicas of physical assets.',
-       subtitletwo: 'Simulation and Modeling',
+      subtitletwo: 'Simulation and Modeling',
       descriptiontwo:
         'Testing and optimizing processes.',
       subtitlethree: 'Real-time Monitoring',
@@ -136,7 +143,7 @@ export const workprocessSectionData: WorkprocessSectionProps = {
       subtitleone: 'Customer Portals',
       description:
         'Enhancing customer engagement and satisfaction.',
-       subtitletwo: 'Employee Portals',
+      subtitletwo: 'Employee Portals',
       descriptiontwo:
         'Streamlining internal communications and processes.',
       subtitlethree: 'Vendor Portals',

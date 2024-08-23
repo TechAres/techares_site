@@ -59,10 +59,10 @@ export const aboutSectionData: AboutSectionProps = {
     },
   },
   sectionHeading: {
-    subtitle: 'About us',
-    title: 'Empowering Your Digital Tomorrow',
+    subtitle: 'About Us',
+    title: 'Who We Are',
     description:
-      'It is a long established fact that a reader will be distracted by the readablejk content of a page when looking at its layout. Lorem Ipsum is simply dum text of the printing and typesetting industry loren ipsum',
+      'Techares is a premier IT solutions provider committed to transforming businesses through cutting-edge technology. With over a decade of experience, we specialize in delivering bespoke software solutions, IT consulting, and comprehensive IT outsourcing services to clients worldwide. Our team of 250+ skilled professionals is dedicated to driving business success through innovation and excellence.',
   },
   keyPoints: [
     {
@@ -75,5 +75,22 @@ export const aboutSectionData: AboutSectionProps = {
     },
   ],
   description:
-    'It is a long established fact that a reader will be distracted by the readablejk content of a page when looking at its layout.',
+    'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+  aboutUsDetails: [
+    {
+      subtitle: 'About Us',
+      title: 'Who We Are',
+      description: 'Techares is a premier IT solutions provider committed to transforming businesses through cutting-edge technology. With over a decade of experience, we specialize in delivering bespoke software solutions, IT consulting, and comprehensive IT outsourcing services to clients worldwide. Our team of 250+ skilled professionals is dedicated to driving business success through innovation and excellence.',
+    },
+    {
+      subtitle: 'About Us',
+      title: 'Our Mission',
+      description: 'Our mission is to empower businesses by providing innovative, reliable, and scalable technology solutions that enhance operational efficiency and drive growth. We strive to be a trusted partner to our clients, helping them navigate the digital landscape and achieve their business objectives.',
+    },
+    {
+      subtitle: 'About Us',
+      title: 'Our Vision',
+      description: 'To be a global leader in IT solutions, renowned for our commitment to quality, innovation, and customer satisfaction. We aim to shape the future of technology by delivering exceptional solutions that make a tangible impact on businesses and society.',
+    }
+  ]
 };

@@ -1,4 +1,5 @@
 import { aboutSectionData } from '@/data/about-section/v2';
+import { workprocessSectionData } from '@/data/work-process/v1';
 import { ImageProps } from '@/src/common-types';
 import { Container } from '@/src/components/container';
 import { SectionHeading } from '@/src/components/section-heading';
@@ -9,13 +10,16 @@ import { FaCircleCheck } from 'react-icons/fa6';
 
 export interface AboutSectionProps {
   sectionHeading: SectionHeadingWithoutStylingProps;
+  sectionHeading2: SectionHeadingWithoutStylingProps;
   aboutUsPoints: string[];
   image: Omit<ImageProps, 'width' | 'height'>;
   videoUrl: string;
 }
 
 export function AboutSection() {
-  const { sectionHeading, aboutUsPoints, image, videoUrl } = aboutSectionData;
+  const { sectionHeading, aboutUsPoints, image, videoUrl, sectionHeading2 } = aboutSectionData;
+
+  const { texts } = workprocessSectionData;
   return (
     <section className="section-padding-primary overflow-hidden">
       <Container>
@@ -25,13 +29,13 @@ export function AboutSection() {
             data-aos="fade-up-right"
             data-aos-delay="400"
           >
-            <SectionHeading {...sectionHeading} />
+            <SectionHeading {...sectionHeading2} />
             {aboutUsPoints && aboutUsPoints.length > 0 && (
               <ul
                 aria-label="about us point"
                 className="mt-10 grid max-w-[560px] gap-1 gap-x-20 sm:grid-cols-2 md:gap-2"
               >
-                {aboutUsPoints.map((point, index) => (
+                {texts.map((point, index) => (
                   <li className="flex items-center gap-3 lg:gap-4" key={index}>
                     <span className="text-lg text-primary">
                       <FaCircleCheck />
