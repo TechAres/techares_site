@@ -1,7 +1,8 @@
+import { blockChainData } from '@/data/service-section/serviceDetails';
 import { Footer } from '@/src/layout/footer/v2';
 import { MainHeader } from '@/src/layout/header';
 import { HeroSection } from '@/src/sections/hero/v3';
-import { ServiceDetailsSection } from '@/src/sections/service-details/v1';
+import { ServiceDetailsSection } from '@/src/sections/service-details/ServiceSingle';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,20 +13,20 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <MainHeader version="2" />
+      <MainHeader version="1" />
       <HeroSection
-        title="Service Details"
+        title="Blockchain"
         breadcrumbItems={[
           {
-            label: 'Home',
-            href: '/',
+            label: 'Services',
+            href: '/services',
           },
           {
-            label: 'Service Details',
+            label: 'Blockchain Development',
           },
         ]}
       />
-      <ServiceDetailsSection />
+      <ServiceDetailsSection {...blockChainData} />
       <Footer />
     </>
   );

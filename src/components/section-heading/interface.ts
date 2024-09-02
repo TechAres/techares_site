@@ -1,10 +1,10 @@
 import { ClassValue } from 'clsx';
-
+import { ReactElement, ReactNode } from 'react';
 type Alignment = 'start' | 'center' | 'end';
 
 export interface SectionHeadingProps {
   subtitle?: string;
-  title: string;
+  title: ReactNode | string | ReactElement;
   description?: string;
   alignment?: Alignment;
   hasBottomSpacing?: boolean;

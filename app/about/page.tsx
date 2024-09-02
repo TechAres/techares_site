@@ -1,4 +1,4 @@
-import { Footer } from '@/src/layout/footer/v2';
+import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
 import { AboutSection } from '@/src/sections/about/v1';
 import { AboutSection as AboutSectionTwo } from '@/src/sections/about/v2';
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <MainHeader version="2" />
+      <MainHeader version="1" />
       <HeroSection
         title="About Us"
         breadcrumbItems={[
@@ -43,7 +43,6 @@ export default function Page() {
       <WhyChooseUs />
       <TestimonialSection />
       <ContactSection />
-      <StatisticsSection />
 
 
       <Footer />

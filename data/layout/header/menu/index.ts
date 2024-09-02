@@ -26,8 +26,8 @@ export const menuItemsProps: HeaderProps['menuItems'] = [
         href: '/services',
       },
       {
-        label: 'Service single',
-        href: '/services/single',
+        label: 'BlockChain Development',
+        href: '/services/blockchain',
       },
     ],
   },

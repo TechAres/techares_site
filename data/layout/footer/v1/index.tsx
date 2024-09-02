@@ -18,6 +18,14 @@ export const footerSectionData: FooterSectionProps = {
         icon: <FaInstagram />,
         href: 'https://www.instagram.com/',
       },
+      {
+        icon: <FaInstagram />,
+        href: 'https://www.instagram.com/',
+      },
+      {
+        icon: <FaInstagram />,
+        href: 'https://www.instagram.com/',
+      },
     ],
   },
   columnOne: {

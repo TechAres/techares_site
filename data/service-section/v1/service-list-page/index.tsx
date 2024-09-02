@@ -93,44 +93,93 @@ export const serviceSectionData: ServiceSectionProps = {
   services: [
     {
       icon: <Icon1 />,
-      title: 'Net Connect Plus',
+      title: 'Blockchain Development',
       description:
-        'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
+        'Elevate your business operations with our innovative blockchain solutions designed to enhance security, transparency, and efficiency.',
       slug: '/services/single',
     },
     {
       icon: <Icon2 />,
-      title: 'Data Guard Sentinel',
+      title: 'Cloud Application Development',
       description:
-        'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
+        'Transform your business with our cutting-edge cloud application development services, designed to deliver scalable, secure, and high-performance cloud solutions.',
       slug: '/services/single',
     },
     {
       icon: <Icon3 />,
-      title: 'App Swift DevOps',
+      title: 'Custom Software Development',
       description:
-        'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
+        'Upscale your business with our innovative and unique software solutions to gain the competitive advantage that enables new efficiencies and improves ROI.',
       slug: '/services/single',
     },
     {
       icon: <Icon4 />,
-      title: 'Data Guard Sentinels',
+      title: 'Database Development and Integration',
       description:
-        'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
+        'Enhance your business operations with our advanced database development and integration services, designed to deliver scalable, secure, and high-performance data solutions',
       slug: '/services/single',
     },
     {
       icon: <Icon5 />,
-      title: 'App Swift DevOps',
+      title: 'E-commerce Solutions',
       description:
-        'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
+        'Transform your online business with our comprehensive and innovative e-commerce solutions, designed to deliver seamless, scalable, and high-performance digital commerce experiences.',
       slug: '/services/single',
     },
     {
       icon: <Icon6 />,
-      title: 'Net Connect Plus',
+      title: 'Enterprise Software Solutions',
       description:
-        'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
+        'Revolutionize your business operations with our cutting-edge enterprise software solutions, designed to boost efficiency, productivity, and profitability.',
+      slug: '/services/single',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'IoT Development Services',
+      description:
+        'Transform your business operations and unlock new opportunities with our cutting-edge IoT development services, designed to enhance efficiency, productivity, and connectivity.',
+      slug: '/services/single',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'IT Outsourcing Services',
+      description:
+        'Transform your business operations and achieve new efficiencies with our comprehensive IT outsourcing services, designed to meet your unique needs and drive growth.',
+      slug: '/services/single',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'Mobile App Development',
+      description:
+        'Transform your business with our state-of-the-art mobile app development solutions designed to enhance user engagement, improve functionality, and drive growth.',
+      slug: '/services/single',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'Quality Assurance and Testing',
+      description:
+        'Ensure the highest quality of your software products with our comprehensive and meticulous QA and testing services, designed to deliver flawless and reliable solutions.',
+      slug: '/services/single',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'Software Consulting',
+      description:
+        'Transform your business with our expert software consulting services, designed to provide strategic guidance, innovative solutions, and measurable results.',
+      slug: '/services/single',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'UI/UX Design',
+      description:
+        'Elevate your business with our innovative and user-centric UI/UX design solutions, crafted to provide exceptional user experiences and drive business growth.',
+      slug: '/services/single',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'Web Development',
+      description:
+        'Elevate your business with our cutting-edge web development solutions designed to enhance user engagement, improve functionality, and drive business growth.',
       slug: '/services/single',
     },
   ],

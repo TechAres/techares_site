@@ -79,17 +79,30 @@ export const aboutSectionData: AboutSectionProps = {
   aboutUsDetails: [
     {
       subtitle: 'About Us',
-      title: 'Who We Are',
+      title: (
+        <>
+          <span className='dark:text-primary'>Who </span>
+          <span>We Are</span>
+        </>
+      ),
       description: 'Techares is a premier IT solutions provider committed to transforming businesses through cutting-edge technology. With over a decade of experience, we specialize in delivering bespoke software solutions, IT consulting, and comprehensive IT outsourcing services to clients worldwide. Our team of 250+ skilled professionals is dedicated to driving business success through innovation and excellence.',
     },
     {
       subtitle: 'About Us',
-      title: 'Our Mission',
+      title: (
+        <>
+          Our <span style={{ color: 'blue' }}>Mission</span>
+        </>
+      ),
       description: 'Our mission is to empower businesses by providing innovative, reliable, and scalable technology solutions that enhance operational efficiency and drive growth. We strive to be a trusted partner to our clients, helping them navigate the digital landscape and achieve their business objectives.',
     },
     {
       subtitle: 'About Us',
-      title: 'Our Vision',
+      title: (
+        <>
+          Our <span style={{ color: 'blue' }}>Vision</span>
+        </>
+      ),
       description: 'To be a global leader in IT solutions, renowned for our commitment to quality, innovation, and customer satisfaction. We aim to shape the future of technology by delivering exceptional solutions that make a tangible impact on businesses and society.',
     }
   ]
