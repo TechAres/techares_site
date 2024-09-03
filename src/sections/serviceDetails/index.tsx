@@ -3,18 +3,17 @@
 import { SectionHeading } from '@/src/components/section-heading';
 import { SectionHeadingWithoutStylingProps } from '@/src/components/section-heading/interface';
 import {
-    ProjectCard,
     PortfolioCardProps,
     PROJECT_CARD_IMAGE_DIMENSION,
 } from '@/src/components/cards/project/v2';
-import { LinkProps } from '@/src/common-types';
-import { Container } from '@/src/components/container';
 import { Button } from '@/src/components/button';
+import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
 import { cn } from '@/src/utils/shadcn';
 import React, { useEffect, useRef, useState } from 'react';
 import Lightbox, { Slide } from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
+import { ServiceCard } from '@/src/components/cards/service-card';
 
 const loadIsotope = () => require('isotope-layout');
 
@@ -24,6 +23,7 @@ interface ProjectFilterButtonProps {
     label: string;
     value: string;
 }
+
 export interface ServiceSectionProps {
     sectionHeading: Pick<SectionHeadingWithoutStylingProps, 'subtitle' | 'title' | 'description'>;
     projectCategories: ProjectFilterButtonProps[];
@@ -41,35 +41,37 @@ export function ServiceSection({
     // Ref to store the isotope object
     const isotopeRef = useRef<Isotope | null>(null);
 
-    // store the filter keyword in a state
-    const [activeFilter, setActiveFilter] = useState(projectCategories[0].value);
+    // Store the filter keyword in a state
+    const [activeFilter, setActiveFilter] = useState(projectCategories[0]?.value || '');
 
     const [open, setOpen] = useState(false);
     const [_, setImage] = useState('');
     const [index, setIndex] = useState<number>(0);
 
     useEffect(() => {
-        // return if window doesn't exist (i.e. server side)
+        // Return if window doesn't exist (i.e. server side)
         if (typeof window === 'undefined') return;
 
-        // load Isotope
+        // Load Isotope
         Isotope = loadIsotope();
 
-        // use Isotope
+        // Initialize Isotope
         isotopeRef.current = new Isotope(containerRef.current, {
             itemSelector: '.filter-item',
             layoutMode: 'fitRows',
+            filter: activeFilter,  // Apply the initial filter
         });
     }, []);
 
-    const handleFilterKeyChange = (key: string) => () => {
+    useEffect(() => {
+        // Apply filter whenever it changes
         if (isotopeRef.current) {
-
-            isotopeRef.current.arrange({ filter: key });
-
-
-            setActiveFilter(key);
+            isotopeRef.current.arrange({ filter: activeFilter });
         }
+    }, [activeFilter]);
+
+    const handleFilterKeyChange = (key: string) => () => {
+        setActiveFilter(key);
     };
 
     const slides: Slide[] = projects.map((project) => {
@@ -103,12 +105,8 @@ export function ServiceSection({
                                     onClick={handleFilterKeyChange(category.value)}
                                     className={cn(
                                         'group/button relative z-1 flex !min-h-[3.5rem] justify-between gap-2 bg-accent-100 text-accent-900 dark:bg-accent-700',
-
                                         'after:bg-primary',
-                                        //hover
                                         'hover:after:opacity-100',
-
-                                        // Add this line to conditionally apply styles for the active filter
                                         activeFilter === category.value &&
                                         'text-white after:left-0 after:w-full'
                                     )}
@@ -135,11 +133,11 @@ export function ServiceSection({
                                 <div
                                     key={index}
                                     className={cn(
-                                        'filter-item mb-10 w-full px-[15px] sm:w-1/2',
+                                        'filter-item mb-10 w-full px-[15px] sm:w-3/4',
                                         project.tags.join(' ')
                                     )}
                                 >
-                                    <ProjectCard
+                                    <ServiceCard
                                         {...project}
                                         onClick={() => {
                                             setOpen(true);

@@ -1,4 +1,4 @@
-import { ServiceSectionProps } from '@/src/sections/service/v1';
+import { ServiceSectionPropss } from '@/src/sections/service/v1';
 
 function Icon1() {
   return (
@@ -89,7 +89,7 @@ function Icon6() {
   );
 }
 
-export const serviceSectionData: ServiceSectionProps = {
+export const serviceSectionData: ServiceSectionPropss = {
   services: [
     {
       icon: <Icon1 />,

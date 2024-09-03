@@ -1,5 +1,9 @@
+import { SectionHeadingWithoutStylingProps } from "@/src/components/section-heading/interface";
 import { ServicesProps } from "@/src/sections/blockChain-service";
+import { ServiceSectionPropss } from "@/src/sections/service/v1";
 import { ServiceSectionProps } from "@/src/sections/serviceDetails";
+import { SoftwareDevelopmentPost, StandardPost } from "@/src/sections/tabs-software-development";
+import { WhatMakesProps } from "@/src/sections/what-makes";
 
 
 function Icon1() {
@@ -197,3 +201,312 @@ export const blockchainServices: ServiceSectionProps = {
     },
   ],
 };
+
+export type Post = SoftwareDevelopmentPost | StandardPost;
+
+export const blockChainSolutions: SectionHeadingWithoutStylingProps = {
+
+  title: 'Blockchain Solutions We Offer',
+  description: 'Our expertise in blockchain development spans a wide range of solutions tailored to fit every unique business need. Whether developing new blockchain applications or enhancing existing systems, our developers ensure the highest quality and performance. Explore some of our exceptional solutions:'
+
+}
+
+export const blockchainCategories = [
+  {
+    name: 'Supply Chain Management',
+    posts: [
+      {
+        id: 1,
+        heading: 'Supply Chain Management',
+        titleone:
+          'Implement blockchain solutions that enhance supply chain transparency, traceability, and efficiency. Our solutions help you monitor and manage your supply chain effectively.',
+        imageUrl: 'assets/images/landing/software/1.png',
+      } as SoftwareDevelopmentPost,
+    ],
+  },
+  {
+    name: 'Healthcare Solutions',
+    posts: [
+      {
+        id: 1,
+        heading: 'Healthcare Solutions',
+        titleone:
+          'Develop blockchain solutions that enhance patient data security, streamline healthcare operations, and improve patient care. Our solutions include secure health records and smart healthcare contracts.',
+        imageUrl: 'assets/images/landing/software/1.png',
+      },
+    ] as StandardPost[],
+  },
+  {
+    name: 'Financial Services',
+    posts: [
+      {
+        id: 1,
+        heading: 'Financial Services',
+        titleone:
+          'Create blockchain solutions that enhance financial services by providing secure, transparent, and efficient transaction processing. Our solutions include digital wallets, payment gateways, and remittance systems.',
+        imageUrl: 'assets/images/landing/software/1.png',
+      },
+    ] as StandardPost[],
+  },
+  {
+    name: 'Real Estate',
+    posts: [
+      {
+        id: 1,
+        heading: 'Real Estate',
+        titleone:
+          'Implement blockchain solutions that streamline real estate transactions and enhance property management. Our solutions include smart contracts for property sales and rentals.',
+        imageUrl: 'assets/images/landing/software/1.png',
+      },
+    ] as StandardPost[],
+  },
+  {
+    name: 'Voting Systems',
+    posts: [
+      {
+        id: 1,
+        heading: 'Voting Systems',
+        titleone:
+          'Develop secure and transparent blockchain-based voting systems that ensure the integrity of elections and voting processes.',
+        imageUrl: 'assets/images/landing/software/1.png',
+      },
+    ] as StandardPost[],
+  },
+  {
+    name: 'Identity Management',
+    posts: [
+      {
+        id: 1,
+        heading: 'Identity Management',
+        titleone:
+          'Create blockchain solutions that provide secure and decentralized identity management. Our solutions enhance user privacy and data security.',
+        imageUrl: 'assets/images/landing/software/1.png',
+      },
+    ] as StandardPost[],
+  },
+  {
+    name: 'Energy Solutions',
+    posts: [
+      {
+        id: 1,
+        heading: 'Energy Solutions',
+        titleone:
+          'Implement blockchain solutions that optimize energy consumption, improve grid management, and enhance sustainability. Our solutions include peer-to-peer energy trading and smart grids.',
+        imageUrl: 'assets/images/landing/software/1.png',
+      },
+    ] as StandardPost[],
+  },
+  {
+    name: 'Automotive Solutions',
+    posts: [
+      {
+        id: 1,
+        heading: 'Automotive Solutions',
+        titleone:
+          'Develop blockchain solutions that enhance vehicle tracking, maintenance, and ownership transfer. Our solutions ensure secure and transparent automotive processes.',
+        imageUrl: 'assets/images/landing/software/1.png',
+      },
+    ] as StandardPost[],
+  },
+  {
+    name: 'Gaming and Entertainment',
+    posts: [
+      {
+        id: 1,
+        heading: 'Gaming and Entertainment',
+        titleone:
+          'Create blockchain solutions that enhance gaming and entertainment experiences. Our solutions include in-game asset management and secure digital content distribution.',
+        imageUrl: 'assets/images/landing/software/1.png',
+      },
+    ] as StandardPost[],
+  },
+  {
+    name: 'Digital Certificates',
+    posts: [
+      {
+        id: 1,
+        heading: 'Digital Certificates',
+        titleone:
+          'Develop blockchain solutions that provide secure and tamper-proof digital certificates for education, training, and professional achievements.',
+        imageUrl: 'assets/images/landing/software/1.png',
+      },
+    ] as StandardPost[],
+  },
+];
+
+
+function Icon3() {
+  return (
+    <svg
+      width="1em"
+      height="1em"
+      viewBox="0 0 65 65"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M32.5 62.9679C32.0697 62.9694 31.6501 62.8343 31.3016 62.5819L25.6953 58.5194C20.2588 54.5543 15.8343 49.3626 12.7813 43.3661C9.72834 37.3696 8.13304 30.7374 8.125 24.0085V12.1866C8.12518 11.7692 8.25397 11.3619 8.49385 11.0203C8.73373 10.6786 9.07304 10.4192 9.46562 10.2773L31.8094 2.15226C32.2557 1.99091 32.7443 1.99091 33.1906 2.15226L55.5344 10.2773C55.927 10.4192 56.2663 10.6786 56.5061 11.0203C56.746 11.3619 56.8748 11.7692 56.875 12.1866V24.0085C56.8702 30.7409 55.2764 37.377 52.2233 43.3773C49.1702 49.3776 44.744 54.5726 39.3047 58.5398L33.6984 62.6023C33.3475 62.8474 32.928 62.9753 32.5 62.9679ZM12.1875 13.6085V24.0085C12.2013 30.0907 13.6464 36.0842 16.4058 41.5044C19.1653 46.9245 23.1617 51.6191 28.0719 55.2085L32.5 58.4179L36.9281 55.2085C41.8383 51.6191 45.8347 46.9245 48.5942 41.5044C51.3536 36.0842 52.7987 30.0907 52.8125 24.0085V13.6085L32.5 6.21476L12.1875 13.6085Z" />
+      <path d="M31.3016 52.5288L30.4688 51.9194C26.0667 48.7174 22.4839 44.52 20.0129 39.6697C17.5418 34.8194 16.2525 29.4536 16.25 24.0101V17.9163C16.2502 17.4989 16.379 17.0916 16.6188 16.75C16.8587 16.4083 17.198 16.1489 17.5906 16.0069L31.8094 10.8476C32.2557 10.6862 32.7443 10.6862 33.1906 10.8476L47.4094 16.0069C47.7955 16.1465 48.1303 16.3997 48.3696 16.7333C48.609 17.0669 48.7416 17.4652 48.75 17.8757V23.9694C48.7475 29.4129 47.4582 34.7787 44.9871 39.629C42.5161 44.4794 38.9333 48.6768 34.5312 51.8788L33.6984 52.4882C33.3549 52.7483 32.9375 52.8925 32.5066 52.8998C32.0758 52.9071 31.6537 52.7772 31.3016 52.5288ZM20.3125 19.2976V24.0101C20.3219 28.7385 21.4273 33.4004 23.542 37.6297C25.6566 41.859 28.7229 45.5405 32.5 48.3851C36.2771 45.5405 39.3434 41.859 41.458 37.6297C43.5727 33.4004 44.6781 28.7385 44.6875 24.0101V19.2976L32.5 14.8694L20.3125 19.2976Z" />
+    </svg>
+  );
+}
+
+function Icon4() {
+  return (
+    <svg
+      width="1em"
+      height="1em"
+      viewBox="0 0 66 65"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M28.363 62.8054C27.9395 62.6241 27.5901 62.3042 27.3724 61.8982C27.1546 61.4922 27.0813 61.0242 27.1646 60.5711L30.7802 40.6242H12.9052C12.5322 40.625 12.1662 40.523 11.8473 40.3295C11.5284 40.1361 11.269 39.8585 11.0974 39.5273C10.9402 39.2062 10.8706 38.8492 10.8956 38.4926C10.9206 38.1359 11.0392 37.7922 11.2396 37.4961L35.6146 2.96481C35.8835 2.58598 36.2742 2.31079 36.7214 2.18511C37.1687 2.05943 37.6455 2.09087 38.0724 2.27418C38.4881 2.44537 38.8352 2.74962 39.0594 3.13925C39.2837 3.52889 39.3723 3.9819 39.3115 4.42731L35.6552 24.3742H53.5302C53.9032 24.3734 54.2692 24.4754 54.5881 24.6688C54.907 24.8623 55.1664 25.1399 55.338 25.4711C55.4952 25.7922 55.5648 26.1491 55.5398 26.5058C55.5149 26.8624 55.3962 27.2062 55.1958 27.5023L30.8208 62.0336C30.5636 62.4266 30.1781 62.7182 29.7299 62.859C29.2818 62.9997 28.7988 62.9808 28.363 62.8054ZM16.8255 36.5617H33.2177C33.5161 36.5612 33.811 36.6265 34.0813 36.7529C34.3516 36.8792 34.5908 37.0636 34.7818 37.2929C34.9703 37.5225 35.1063 37.7906 35.18 38.0784C35.2537 38.3662 35.2634 38.6666 35.2083 38.9586L32.7911 52.2429L49.6099 28.4367H33.2177C32.9193 28.4372 32.6244 28.3719 32.3541 28.2455C32.0838 28.1191 31.8446 27.9347 31.6536 27.7054C31.4651 27.4759 31.3291 27.2078 31.2554 26.92C31.1817 26.6322 31.1721 26.3317 31.2271 26.0398L33.6443 12.7554L16.8255 36.5617Z" />
+    </svg>
+  );
+}
+
+function Icon5() {
+  return (
+    <svg
+      width="1em"
+      height="1em"
+      viewBox="0 0 66 65"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M61.6562 10.1562H4.78125C4.24253 10.1562 3.72587 10.3703 3.34494 10.7512C2.96401 11.1321 2.75 11.6488 2.75 12.1875V52.8125C2.75 53.3512 2.96401 53.8679 3.34494 54.2488C3.72587 54.6297 4.24253 54.8438 4.78125 54.8438H61.6562C62.195 54.8438 62.7116 54.6297 63.0926 54.2488C63.4735 53.8679 63.6875 53.3512 63.6875 52.8125V12.1875C63.6875 11.6488 63.4735 11.1321 63.0926 10.7512C62.7116 10.3703 62.195 10.1562 61.6562 10.1562ZM59.625 50.7812H6.8125V14.2188H59.625V50.7812Z" />
+      <path d="M14.5507 45.8656L23.0617 33.9624L31.5726 45.8656C31.7161 46.1078 31.9084 46.3176 32.1373 46.4816C32.3661 46.6456 32.6266 46.7602 32.9022 46.8182C33.1777 46.8762 33.4623 46.8762 33.7379 46.8183C34.0134 46.7605 34.274 46.6459 34.5029 46.482C34.7318 46.3181 34.9242 46.1083 35.0677 45.8661C35.2113 45.6239 35.3029 45.3544 35.3368 45.0749C35.3707 44.7954 35.3461 44.5118 35.2646 44.2423C35.183 43.9728 35.0464 43.7232 34.8632 43.5093L31.857 39.2843L39.3117 29.7171L51.9257 45.9671C52.0813 46.1966 52.2823 46.3919 52.5162 46.5407C52.7502 46.6896 53.0121 46.7891 53.2859 46.8329C53.5597 46.8767 53.8396 46.864 54.1083 46.7956C54.377 46.7271 54.6289 46.6044 54.8484 46.4349C55.0678 46.2654 55.2503 46.0528 55.3845 45.8102C55.5187 45.5675 55.6018 45.2999 55.6286 45.024C55.6555 44.748 55.6256 44.4694 55.5407 44.2054C55.4558 43.9414 55.3178 43.6976 55.1351 43.489L40.9163 25.2078C40.7265 24.9631 40.4832 24.7651 40.205 24.6289C39.9269 24.4927 39.6213 24.4219 39.3117 24.4219C39.002 24.4219 38.6964 24.4927 38.4183 24.6289C38.1401 24.7651 37.8968 24.9631 37.707 25.2078L29.3992 35.8921L24.707 29.3312C24.5186 29.0711 24.2713 28.8593 23.9853 28.7133C23.6993 28.5673 23.3828 28.4911 23.0617 28.4911C22.7405 28.4911 22.424 28.5673 22.138 28.7133C21.852 28.8593 21.6047 29.0711 21.4163 29.3312L11.2601 43.5499C11.0011 43.9873 10.9154 44.5058 11.0201 45.0032C11.1247 45.5006 11.412 45.9406 11.8252 46.2366C12.2385 46.5325 12.7477 46.6627 13.2522 46.6015C13.7568 46.5404 14.2201 46.2923 14.5507 45.9062V45.8656Z" />
+      <path d="M29.1562 24.375C30.2781 24.375 31.1875 23.4656 31.1875 22.3438C31.1875 21.2219 30.2781 20.3125 29.1562 20.3125C28.0344 20.3125 27.125 21.2219 27.125 22.3438C27.125 23.4656 28.0344 24.375 29.1562 24.375Z" />
+    </svg>
+  );
+}
+
+function Icon6() {
+  return (
+    <svg
+      width="1em"
+      height="1em"
+      viewBox="0 0 65 65"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M39.3237 62.805L32.4987 59.9409L25.6737 62.805C25.2561 62.9821 24.7912 63.0144 24.3531 62.8966C23.9151 62.7788 23.529 62.5177 23.2566 62.155L18.7878 56.2644L11.4347 55.33C10.9853 55.2745 10.5673 55.0705 10.2471 54.7503C9.92697 54.4302 9.72295 54.0122 9.6675 53.5628L8.73312 46.2097L2.8425 41.7409C2.47979 41.4685 2.21874 41.0824 2.10093 40.6444C1.98313 40.2063 2.01537 39.7414 2.1925 39.3237L5.05656 32.4987L2.1925 25.6737C2.01537 25.2561 1.98313 24.7912 2.10093 24.3531C2.21874 23.9151 2.47979 23.529 2.8425 23.2566L8.73312 18.7878L9.6675 11.4347C9.72295 10.9853 9.92697 10.5673 10.2471 10.2471C10.5673 9.92697 10.9853 9.72295 11.4347 9.6675L18.7878 8.73312L23.2566 2.8425C23.529 2.47979 23.9151 2.21874 24.3531 2.10093C24.7912 1.98313 25.2561 2.01537 25.6737 2.1925L32.4987 5.05656L39.3237 2.1925C39.7414 2.01537 40.2063 1.98313 40.6444 2.10093C41.0824 2.21874 41.4685 2.47979 41.7409 2.8425L46.2097 8.73312L53.5628 9.6675C54.0122 9.72295 54.4302 9.92697 54.7503 10.2471C55.0705 10.5673 55.2745 10.9853 55.33 11.4347L56.2644 18.7878L62.155 23.2566C62.5177 23.529 62.7788 23.9151 62.8966 24.3531C63.0144 24.7912 62.9821 25.2561 62.805 25.6737L59.9409 32.4987L62.805 39.3237C62.9821 39.7414 63.0144 40.2063 62.8966 40.6444C62.7788 41.0824 62.5177 41.4685 62.155 41.7409L56.2644 46.2097L55.33 53.5628C55.2745 54.0122 55.0705 54.4302 54.7503 54.7503C54.4302 55.0705 54.0122 55.2745 53.5628 55.33L46.2097 56.2644L41.7409 62.155C41.4685 62.5177 41.0824 62.7788 40.6444 62.8966C40.2063 63.0144 39.7414 62.9821 39.3237 62.805ZM33.23 55.8581L39.3237 58.4581L43.3862 53.1159C43.5508 52.9037 43.7558 52.7262 43.9894 52.5937C44.223 52.4612 44.4806 52.3764 44.7472 52.3441L51.3691 51.4909L52.2222 44.8691C52.2545 44.6024 52.3393 44.3449 52.4718 44.1113C52.6043 43.8777 52.7818 43.6727 52.9941 43.5081L58.3362 39.4456L55.7362 33.3519C55.5328 32.8433 55.5328 32.276 55.7362 31.7675L58.3362 25.6737L52.9941 21.6112C52.7818 21.4467 52.6043 21.2417 52.4718 21.0081C52.3393 20.7745 52.2545 20.5169 52.2222 20.2503L51.3691 13.6284L44.7472 12.7753C44.4806 12.743 44.223 12.6582 43.9894 12.5257C43.7558 12.3932 43.5508 12.2157 43.3862 12.0034L39.3237 6.66125L33.23 9.26125C32.7215 9.46468 32.1542 9.46468 31.6456 9.26125L25.5519 6.66125L21.4894 12.0034C21.3248 12.2157 21.1198 12.3932 20.8862 12.5257C20.6526 12.6582 20.395 12.743 20.1284 12.7753L13.5066 13.6284L12.6534 20.1284C12.6211 20.395 12.5363 20.6526 12.4038 20.8862C12.2713 21.1198 12.0938 21.3248 11.8816 21.4894L6.53937 25.5519L9.13937 31.6456C9.34281 32.1542 9.34281 32.7215 9.13937 33.23L6.53937 39.3237L11.8816 43.3862C12.0938 43.5508 12.2713 43.7558 12.4038 43.9894C12.5363 44.223 12.6211 44.4806 12.6534 44.7472L13.5066 51.3691L20.1284 52.2222C20.395 52.2545 20.6526 52.3393 20.8862 52.4718C21.1198 52.6043 21.3248 52.7818 21.4894 52.9941L25.5519 58.3362L31.6456 55.7362C31.9142 55.6463 32.198 55.6107 32.4805 55.6317C32.763 55.6526 33.0385 55.7296 33.2909 55.8581H33.23Z" />
+      <path d="M28.6816 46.7192C28.3436 46.7208 28.0106 46.638 27.7126 46.4784C27.4147 46.3188 27.1613 46.0874 26.9754 45.8051L18.6066 33.0692C18.4599 32.8451 18.3588 32.5943 18.309 32.3312C18.2592 32.068 18.2617 31.7976 18.3164 31.5354C18.3711 31.2733 18.4769 31.0244 18.6278 30.8031C18.7787 30.5818 18.9716 30.3924 19.1957 30.2457C19.6482 29.9494 20.1999 29.845 20.7294 29.9555C20.9916 30.0102 21.2404 30.116 21.4617 30.2669C21.683 30.4177 21.8724 30.6107 22.0191 30.8348L28.6816 40.991L42.9004 19.1957C43.1967 18.7432 43.6606 18.4269 44.1901 18.3164C44.7196 18.206 45.2713 18.3104 45.7238 18.6067C46.1764 18.903 46.4927 19.3669 46.6031 19.8964C46.7136 20.4259 46.6092 20.9776 46.3129 21.4301L30.4691 45.8051C30.2759 46.0993 30.0096 46.3382 29.6962 46.4984C29.3829 46.6586 29.0333 46.7347 28.6816 46.7192Z" />
+    </svg>
+  );
+}
+export const blockChainTech: SectionHeadingWithoutStylingProps = {
+  title: "Technology Stack Our Blockchain Developers Use",
+  description: "Our blockchain developers utilize the latest tools and technologies to deliver comprehensive and reliable solutions, ensuring your blockchain systems meet the highest standards of quality."
+}
+export const blockchainServiceSectionData: ServiceSectionPropss = {
+  services: [
+    {
+      icon: <Icon1 />,
+      title: 'Healthcare',
+      description:
+        'Develop blockchain solutions that enhance patient care, streamline operations, and improve data security.',
+    },
+    {
+      icon: <Icon2 />,
+      title: 'Financial Services',
+      description:
+        'Implement blockchain solutions that enhance transaction processing, transparency, and security in financial services.',
+    },
+    {
+      icon: <Icon3 />,
+      title: 'Supply Chain & Logistics',
+      description:
+        'Create blockchain solutions that improve supply chain transparency, traceability, and efficiency.',
+    },
+    {
+      icon: <Icon4 />,
+      title: 'Real Estate',
+      description:
+        'Develop blockchain solutions that streamline property transactions and enhance property management.',
+    },
+    {
+      icon: <Icon5 />,
+      title: 'Voting Systems',
+      description:
+        'Implement secure and transparent blockchain-based voting systems that ensure election integrity.',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'Identity Management',
+      description:
+        'Create blockchain solutions that provide secure and decentralized identity management.',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'Energy',
+      description:
+        'Develop blockchain solutions that optimize energy consumption, improve grid management, and enhance sustainability.',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'Automotive',
+      description:
+        'Implement blockchain solutions that enhance vehicle tracking, maintenance, and ownership transfer.',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'Gaming & Entertainment',
+      description:
+        'Create blockchain solutions that enhance gaming and entertainment experiences.',
+    },
+    {
+      icon: <Icon6 />,
+      title: 'Education & Certification',
+      description:
+        'Develop blockchain solutions that provide secure and tamper-proof digital certificates for education and professional achievements.',
+    },
+  ],
+};
+
+export const WhatMakesBlockChain: WhatMakesProps = {
+  sectionHeading2: {
+    title: 'What Makes Us a Top Blockchain Development Company',
+    description:
+      'Techares has been a leading blockchain development company for over 10 years, utilizing advanced technologies to deliver innovative solutions for clients globally. Our team of experts excels in leveraging technology to drive business success across various industry verticals. We provide business-driven and growth-centric blockchain development services with faster turnaround times and better ROI for businesses. Here’s why you should choose us:',
+  },
+  aboutUsPoints: [
+    'Highly Experienced Team',
+    'Secure Codebase',
+    '150+ Trusted Clients',
+    'NDA Signed',
+    '10x Better Communication',
+    '100% Quality Assurance',
+    'Pre/Post Deployment Support',
+  ],
+  images: {
+    image1: {
+      src: '/assets/images/landing/whychoose.png',
+      alt: 'about one',
+      width: 750,
+      height: 500,
+    },
+    image2: {
+      src: '/assets/images/about/about-2.png',
+      alt: 'about two',
+      width: 312,
+      height: 304,
+    },
+    image3: {
+      src: '/assets/images/about/about-3.png',
+      alt: 'about three',
+      width: 250,
+      height: 265,
+    },
+    image4: {
+      src: '/assets/images/about/about-4.png',
+      alt: 'about four',
+      width: 250,
+      height: 265,
+    },
+  },
+};
+
+export const IndustryWeServe: SectionHeadingWithoutStylingProps = {
+  title: "Industries We Serve",
+  description: "As a top blockchain development services provider, we deliver comprehensive solutions tailored to meet specific industry needs. Enhance your business capabilities with our expertise and solutions to overcome industry challenges. We serve various industry verticals, including:"
+}

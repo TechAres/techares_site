@@ -1,6 +1,6 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 
-interface SoftwareDevelopmentPost {
+export interface SoftwareDevelopmentPost {
   id: number;
   heading: string;
   titleone: string;
@@ -103,7 +103,7 @@ const categories = [
       },
     ] as StandardPost[],
   },
- 
+
   {
     name: 'Web3 Development',
     posts: [
