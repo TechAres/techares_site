@@ -26,9 +26,6 @@ export const workprocessSectionData: WorkprocessSectionProps = {
       subtitletwo: 'ERP Implementation',
       descriptiontwo:
         'Corporate restructuring refers to the design process of reorganizing a man company won as out Corporate',
-      subtitlethree: 'ERP Implementation',
-      descriptionthree:
-        'Corporate restructuring refers to the design process of reorganizing a man company won as out Corporate',
       count: '01',
       link: '',
     },

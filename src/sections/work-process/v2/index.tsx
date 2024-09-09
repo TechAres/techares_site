@@ -2,10 +2,11 @@ import { WorkprocessCardProps } from '../v1/card';
 import { TextSlider } from '../v1/text-slider';
 import { WorkCardsCaraousl } from '../v1/cards-carousel';
 import { whyChooseData } from '@/data/why-choose/v1';
+import { ReactElement, ReactNode } from 'react';
 
 export interface whyChooseUsProps {
     cards: WorkprocessCardProps[];
-    title: string;
+    title: ReactNode | string | ReactElement;
 }
 
 export function WhyChooseUs() {

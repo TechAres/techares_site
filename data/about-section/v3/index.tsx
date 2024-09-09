@@ -29,7 +29,12 @@ export const aboutSectionThreeData: AboutSectionThreeProps = {
     },
     sectionHeading: {
         subtitle: 'Our Team',
-        title: 'Our Team',
+        title: (
+            <>
+                <span>Our </span>
+                <span className='dark:text-primary'>Team</span>
+            </>
+        ),
         description:
             ' Our team consists of highly skilled professionals, including developers, designers, consultants, and project managers, who are passionate about technology and dedicated to delivering exceptional results.We foster a culture of continuous learning and innovation, ensuring our team stays at the forefront of technological advancements.',
     },

@@ -43,7 +43,12 @@ export const whyChooseData: whyChooseUsProps = {
             link: '',
         },
     ],
-    title: "Why Choose Techares"
+    title: (
+        <>
+            <span>Why Choose </span>
+            <span className='dark:text-primary'>Techares</span>
+        </>
+    ),
 }
 
 function Icon1() {

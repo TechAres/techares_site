@@ -36,7 +36,14 @@ function Icon2() {
     </svg>
   );
 }
-
+export const BlockchainHeading: SectionHeadingWithoutStylingProps = {
+  title: 'Premier Blockchain Development Company',
+  description: 'Elevate your business operations with our innovative blockchain solutions designed to enhance security, transparency, and efficiency.'
+}
+export const BlockchainServiceHeading: SectionHeadingWithoutStylingProps = {
+  title: 'Blockchain Development Services',
+  description: 'Leverage our technical expertise and industry experience to access a wide range of blockchain development services tailored to your unique business challenges. Here are some of our key services:'
+}
 export const BlockChainServices: ServicesProps = {
   images: {
     image1: {
@@ -73,134 +80,192 @@ export const BlockChainServices: ServicesProps = {
     'It is a long established fact that a reader will be distracted by the readablejk content of a page when looking at its layout.',
 };
 
-export const blockchainServices: ServiceSectionProps = {
-  sectionHeading: {
-    title: 'Blockchain Development Services',
-    description: 'Leverage our technical expertise and industry experience to access a wide range of blockchain development services tailored to your unique business challenges. Here are some of our key services:'
-  },
-  projectCategories: [
-    {
-      label: 'Custom Blockchain Development',
-      value: '.CustomBlockchainDevelopment',
-    },
-    {
-      label: 'Blockchain Consulting',
-      value: '.BlockchainConsulting',
-    },
-    {
-      label: 'Smart Contract Development',
-      value: '.SmartContractDevelopment',
-    },
-    {
-      label: 'Decentralized Application (DApp) Development',
-      value: '.DecentralizedApplicationDevelopment',
-    },
-    {
-      label: 'Blockchain Integration',
-      value: '.BlockchainIntegration',
-    },
-    {
-      label: 'Blockchain Security',
-      value: '.BlockchainSecurity',
-    },
-    {
-      label: 'Blockchain Maintenance and Support',
-      value: '.BlockchainMaintenanceandSupport',
-    },
-    {
-      label: 'Cryptocurrency Development',
-      value: '.CryptocurrencyDevelopment',
-    },
-    {
-      label: "ICO and STO Development",
-      value: ".ICOandSTODevelopment"
-    }
+// export const blockchainServices: ServiceSectionProps = {
+//   sectionHeading: {
+//     title: 'Blockchain Development Services',
+//     description: 'Leverage our technical expertise and industry experience to access a wide range of blockchain development services tailored to your unique business challenges. Here are some of our key services:'
+//   },
+//   projectCategories: [
+//     {
+//       label: 'Custom Blockchain Development',
+//       value: '.CustomBlockchainDevelopment',
+//     },
+//     {
+//       label: 'Blockchain Consulting',
+//       value: '.BlockchainConsulting',
+//     },
+//     {
+//       label: 'Smart Contract Development',
+//       value: '.SmartContractDevelopment',
+//     },
+//     {
+//       label: 'Decentralized Application (DApp) Development',
+//       value: '.DecentralizedApplicationDevelopment',
+//     },
+//     {
+//       label: 'Blockchain Integration',
+//       value: '.BlockchainIntegration',
+//     },
+//     {
+//       label: 'Blockchain Security',
+//       value: '.BlockchainSecurity',
+//     },
+//     {
+//       label: 'Blockchain Maintenance and Support',
+//       value: '.BlockchainMaintenanceandSupport',
+//     },
+//     {
+//       label: 'Cryptocurrency Development',
+//       value: '.CryptocurrencyDevelopment',
+//     },
+//     {
+//       label: "ICO and STO Development",
+//       value: ".ICOandSTODevelopment"
+//     }
 
-  ],
-  projects: [
+//   ],
+//   projects: [
+//     {
+//       image: {
+//         src: '/assets/images/project/11.png',
+//         alt: 'Custom Blockchain Development',
+//       },
+//       title: 'Custom Blockchain Development',
+//       description: 'Create bespoke blockchain solutions that enhance your business operations and deliver tangible results. Our custom development services ensure your blockchain solutions align perfectly with your business needs.',
+//       tags: ['CustomBlockchainDevelopment'],
+//     },
+//     {
+//       image: {
+//         src: '/assets/images/project/12.png',
+//         alt: 'Blockchain Consulting',
+//       },
+//       title: 'Blockchain Consulting',
+//       description: 'Receive expert guidance on blockchain strategy, technology selection, and implementation. Our consulting services help you optimize your blockchain investments and achieve your business goals.',
+//       tags: ['BlockchainConsulting'],
+//     },
+//     {
+//       image: {
+//         src: '/assets/images/project/13.png',
+//         alt: 'Smart Contract Development',
+//       },
+//       title: 'Smart Contract Development',
+//       description: 'Develop secure and efficient smart contracts to automate processes and transactions. Our smart contract solutions ensure accuracy, transparency, and trust in your business dealings.',
+//       tags: ['SmartContractDevelopment'],
+//     },
+//     {
+//       image: {
+//         src: '/assets/images/project/13.png',
+//         alt: 'Decentralized Application (DApp) Development',
+//       },
+//       title: 'Decentralized Application (DApp) Development',
+//       description: 'Build engaging and user-friendly decentralized applications (DApps) that leverage the power of blockchain technology. Our DApps enhance user experience and drive business growth.',
+//       tags: ['DecentralizedApplicationDevelopment'],
+//     },
+//     {
+//       image: {
+//         src: '/assets/images/project/13.png',
+//         alt: 'Blockchain Integration',
+//       },
+//       title: 'Blockchain Integration',
+//       description: 'Integrate blockchain technology seamlessly with existing systems and third-party services. Our integration services ensure smooth data flow and operational efficiency.',
+//       tags: ['BlockchainIntegration'],
+//     },
+//     {
+//       image: {
+//         src: '/assets/images/project/13.png',
+//         alt: 'Blockchain Security',
+//       },
+//       title: 'Blockchain Security',
+//       description: 'Ensure the security of your blockchain solutions with our comprehensive blockchain security services. We implement robust security measures to protect your data and transactions from threats.',
+//       tags: ['BlockchainSecurity'],
+//     },
+//     {
+//       image: {
+//         src: '/assets/images/project/13.png',
+//         alt: 'Blockchain Maintenance and Support',
+//       },
+//       title: 'Blockchain Maintenance and Support',
+//       description: 'Ensure the smooth operation of your blockchain solutions with our maintenance and support services. We provide ongoing support to keep your blockchain systems updated, secure, and running efficiently.',
+//       tags: ['BlockchainMaintenanceandSupport'],
+//     },
+//     {
+//       image: {
+//         src: '/assets/images/project/13.png',
+//         alt: 'Cryptocurrency Development',
+//       },
+//       title: 'Cryptocurrency Development',
+//       description: 'Develop custom cryptocurrencies tailored to your business needs. Our cryptocurrency solutions enable secure and efficient digital transactions.',
+//       tags: ['CryptocurrencyDevelopment'],
+//     },
+//     {
+//       image: {
+//         src: '/assets/images/project/13.png',
+//         alt: 'ICO and STO Development',
+//       },
+//       title: 'ICO and STO Development',
+//       description: 'Launch successful Initial Coin Offerings (ICO) and Security Token Offerings (STO) with our end-to-end development services. We help you raise funds and attract investors.',
+//       tags: ['ICOandSTODevelopment'],
+//     },
+//   ],
+// };
+export const blockchainServices = {
+  cards: [
     {
-      image: {
-        src: '/assets/images/project/11.png',
-        alt: 'Custom Blockchain Development',
-      },
+      icon: <Icon1 />,
       title: 'Custom Blockchain Development',
-      description: 'Create bespoke blockchain solutions that enhance your business operations and deliver tangible results. Our custom development services ensure your blockchain solutions align perfectly with your business needs.',
-      tags: ['CustomBlockchainDevelopment'],
+      description:
+        'Create bespoke blockchain solutions that enhance your business operations and deliver tangible results. Our custom development services ensure your blockchain solutions align perfectly with your business needs.',
     },
     {
-      image: {
-        src: '/assets/images/project/12.png',
-        alt: 'Blockchain Consulting',
-      },
+      icon: <Icon1 />,
       title: 'Blockchain Consulting',
-      description: 'Receive expert guidance on blockchain strategy, technology selection, and implementation. Our consulting services help you optimize your blockchain investments and achieve your business goals.',
-      tags: ['BlockchainConsulting'],
+      description:
+        'Receive expert guidance on blockchain strategy, technology selection, and implementation. Our consulting services help you optimize your blockchain investments and achieve your business goals.',
     },
     {
-      image: {
-        src: '/assets/images/project/13.png',
-        alt: 'Smart Contract Development',
-      },
+      icon: <Icon1 />,
       title: 'Smart Contract Development',
-      description: 'Develop secure and efficient smart contracts to automate processes and transactions. Our smart contract solutions ensure accuracy, transparency, and trust in your business dealings.',
-      tags: ['SmartContractDevelopment'],
+      description:
+        'Develop secure and efficient smart contracts to automate processes and transactions. Our smart contract solutions ensure accuracy, transparency, and trust in your business dealings.',
     },
     {
-      image: {
-        src: '/assets/images/project/13.png',
-        alt: 'Decentralized Application (DApp) Development',
-      },
+      icon: <Icon1 />,
       title: 'Decentralized Application (DApp) Development',
-      description: 'Build engaging and user-friendly decentralized applications (DApps) that leverage the power of blockchain technology. Our DApps enhance user experience and drive business growth.',
-      tags: ['DecentralizedApplicationDevelopment'],
+      description:
+        'Build engaging and user-friendly decentralized applications (DApps) that leverage the power of blockchain technology. Our DApps enhance user experience and drive business growth.',
     },
     {
-      image: {
-        src: '/assets/images/project/13.png',
-        alt: 'Blockchain Integration',
-      },
+      icon: <Icon1 />,
       title: 'Blockchain Integration',
-      description: 'Integrate blockchain technology seamlessly with existing systems and third-party services. Our integration services ensure smooth data flow and operational efficiency.',
-      tags: ['BlockchainIntegration'],
+      description:
+        'Integrate blockchain technology seamlessly with existing systems and third-party services. Our integration services ensure smooth data flow and operational efficiency.',
     },
     {
-      image: {
-        src: '/assets/images/project/13.png',
-        alt: 'Blockchain Security',
-      },
+      icon: <Icon1 />,
       title: 'Blockchain Security',
-      description: 'Ensure the security of your blockchain solutions with our comprehensive blockchain security services. We implement robust security measures to protect your data and transactions from threats.',
-      tags: ['BlockchainSecurity'],
+      description:
+        'Ensure the security of your blockchain solutions with our comprehensive blockchain security services. We implement robust security measures to protect your data and transactions from threats.',
     },
     {
-      image: {
-        src: '/assets/images/project/13.png',
-        alt: 'Blockchain Maintenance and Support',
-      },
+      icon: <Icon1 />,
       title: 'Blockchain Maintenance and Support',
-      description: 'Ensure the smooth operation of your blockchain solutions with our maintenance and support services. We provide ongoing support to keep your blockchain systems updated, secure, and running efficiently.',
-      tags: ['BlockchainMaintenanceandSupport'],
+      description:
+        'Ensure the smooth operation of your blockchain solutions with our maintenance and support services. We provide ongoing support to keep your blockchain systems updated, secure, and running efficiently.',
     },
     {
-      image: {
-        src: '/assets/images/project/13.png',
-        alt: 'Cryptocurrency Development',
-      },
+      icon: <Icon1 />,
       title: 'Cryptocurrency Development',
-      description: 'Develop custom cryptocurrencies tailored to your business needs. Our cryptocurrency solutions enable secure and efficient digital transactions.',
-      tags: ['CryptocurrencyDevelopment'],
+      description:
+        'Develop custom cryptocurrencies tailored to your business needs. Our cryptocurrency solutions enable secure and efficient digital transactions.',
     },
     {
-      image: {
-        src: '/assets/images/project/13.png',
-        alt: 'ICO and STO Development',
-      },
+      icon: <Icon1 />,
       title: 'ICO and STO Development',
-      description: 'Launch successful Initial Coin Offerings (ICO) and Security Token Offerings (STO) with our end-to-end development services. We help you raise funds and attract investors.',
-      tags: ['ICOandSTODevelopment'],
+      description:
+        'Launch successful Initial Coin Offerings (ICO) and Security Token Offerings (STO) with our end-to-end development services. We help you raise funds and attract investors.',
     },
   ],
-};
+}
 
 export type Post = SoftwareDevelopmentPost | StandardPost;
 

@@ -29,6 +29,54 @@ export const menuItemsProps: HeaderProps['menuItems'] = [
         label: 'BlockChain Development',
         href: '/services/blockchain',
       },
+      {
+        label: 'Cloud App Development',
+        href: '/services/cloud-app',
+      },
+      {
+        label: 'Custom Software Development',
+        href: '/services/custom-software'
+      },
+      {
+        label: 'Database Development',
+        href: '/services/database-integration'
+      },
+      {
+        label: "E-commerce Solutions",
+        href: "/services/ecommerce"
+      },
+      {
+        label: "Enterprise Software Solutions",
+        href: "/services/enterprise-software"
+      },
+      {
+        label: "IOT Development",
+        href: "/services/IOT-development"
+      },
+      {
+        label: "IT Outsourcing",
+        href: "/services/IT-outsourcing"
+      },
+      {
+        label: "Mobile App Development",
+        href: "/services/mobile-app"
+      },
+      {
+        label: "QA and Testing",
+        href: "/services/quality-assurance"
+      },
+      {
+        label: "Software Consulting",
+        href: "/services/software-consult"
+      },
+      {
+        label: "UI/UX Design",
+        href: "/services/ui-ux"
+      },
+      {
+        label: "Web Development",
+        href: "/services/web-dev"
+      }
     ],
   },
   {

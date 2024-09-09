@@ -1,5 +1,5 @@
 
-import { aboutSectionThreeData } from '@/data/about-section/v3';
+import { aboutSectionThreeData } from '@/data/about-section/v3/index';
 import { ImageProps } from '@/src/common-types';
 import { Container } from '@/src/components/container';
 import { SectionHeadingWithoutStylingProps } from '@/src/components/section-heading/interface';

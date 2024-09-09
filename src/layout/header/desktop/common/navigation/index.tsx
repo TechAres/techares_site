@@ -43,7 +43,7 @@ export function Navigation({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
                     aria-label="sumenu-items"
                     className={cn([
                       // Layout
-                      'absolute  left-0 top-full z-40 w-[230px] overflow-hidden bg-accent-700 shadow-lg dark:bg-accent-700',
+                      'absolute  left-0 top-full z-40 w-[350px] overflow-hidden bg-accent-700 shadow-lg dark:bg-accent-700',
 
                       // Submenu normal
                       'origin-[0_0_0] scale-y-0 transition-transform duration-350',
@@ -52,7 +52,7 @@ export function Navigation({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
                       'group-hover/menu-item:scale-y-100',
                     ])}
                   >
-                    <ul className="grid divide-y divide-white/5">
+                    <ul className="grid grid-cols-2 gap-2 divide-y divide-white/5">
                       {menuItem.subMenuItems.map((subMenuItem, index) => (
                         <li key={index} className="leading-none">
                           <CustomLink

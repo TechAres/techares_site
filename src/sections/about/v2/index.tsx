@@ -1,4 +1,4 @@
-import { aboutSectionData } from '@/data/about-section/v2';
+import { aboutSectionData } from '@/data/about-section/v2/index';
 import { workprocessSectionData } from '@/data/work-process/v1';
 import { ImageProps } from '@/src/common-types';
 import { Container } from '@/src/components/container';
@@ -35,7 +35,8 @@ export function AboutSection() {
                 aria-label="about us point"
                 className="mt-10 grid max-w-[560px] gap-1 gap-x-20 sm:grid-cols-2 md:gap-2"
               >
-                {texts.map((point, index) => (
+
+                {texts && texts.map((point, index) => (
                   <li className="flex items-center gap-3 lg:gap-4" key={index}>
                     <span className="text-lg text-primary">
                       <FaCircleCheck />

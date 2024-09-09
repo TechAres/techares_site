@@ -31,7 +31,7 @@ export function ServiceCard({ icon, title, description, slug }: ServiceProps) {
           {title}
         </h2>
       </div>
-      <p className="text-accent-800 dark:text-body">{description}</p>
+      <p className="text-accent-800 text-justify dark:text-body">{description}</p>
       {
         slug && (
           <Button
