@@ -8,7 +8,7 @@ import { SectionHeading } from '@/src/components/section-heading';
 import { SectionHeadingWithoutStylingProps } from '@/src/components/section-heading/interface';
 
 export interface IndustryProps {
-    sectionHeading: SectionHeadingWithoutStylingProps;
+    sectionHeading?: SectionHeadingWithoutStylingProps;
 }
 export interface IndustryBannerProps extends ServiceSectionPropss, IndustryProps { }
 export function IndustrySections({ services, className, sectionHeading }: IndustryBannerProps) {
@@ -17,7 +17,9 @@ export function IndustrySections({ services, className, sectionHeading }: Indust
             <Container>
                 <div className="mb-10 flex flex-wrap items-end justify-between gap-x-20 gap-y-10 md:mb-[3.75rem]">
                     <div className="max-w-[100%]">
-                        <SectionHeading {...sectionHeading} alignment="start" />
+                        {
+                            sectionHeading && <SectionHeading {...sectionHeading} alignment="start" />
+                        }
                     </div>
                 </div>
                 {services && services.length > 0 && (

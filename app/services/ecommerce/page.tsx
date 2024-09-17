@@ -9,7 +9,7 @@ import { IndustrySections } from '@/src/sections/service/Industry-service/Index'
 import { WhatMakes } from '@/src/sections/what-makes';
 import { ServiceSolutionSection } from '@/src/sections/services-solution';
 import { HeadingComponent } from '@/src/sections/service-text';
-import { ecommerceCategories, EcommerceHeading, ecommerceIndustry, ecommerceSectionData, EcommerceServiceHeading, ecommerceServices, EcommerceServices, ecommerceSolutions, ecommerceTech, WhatMakesEcommerce } from '@/data/e-commerce-service';
+import { ecommerceCategories, EcommerceHeading, ecommerceIndustry, ecommerceSectionData, EcommerceServiceHeading, ecommerceServices, EcommerceServices, ecommerceSolutions, ecommerceTech, imageEcommerce, WhatMakesEcommerce } from '@/data/e-commerce-service';
 
 export const metadata: Metadata = {
     title: 'Techlab | E-commerce Solutions',
@@ -41,7 +41,7 @@ export default function Page() {
             <HeadingComponent sectionHeading={EcommerceServiceHeading} />
             <ServiceSolutionSection cards={cards} className='h-72 text-justify' />
             <Tabs blockChainSolutions={ecommerceSolutions} categories={ecommerceCategories} />
-            <BlueTagBanner sectionHeading={ecommerceTech} />
+            <BlueTagBanner sectionHeading={ecommerceTech} imageLayout={imageEcommerce} />
             <IndustrySections services={services} sectionHeading={ecommerceIndustry} />
             <WhatMakes sectionHeading2={sectionHeading2} aboutUsPoints={aboutUsPoints} images={images} />
             <Footer />

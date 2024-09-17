@@ -10,7 +10,7 @@ import { WhatMakes } from '@/src/sections/what-makes';
 import { ServiceSolutionSection } from '@/src/sections/services-solution';
 import { HeadingComponent } from '@/src/sections/service-text';
 import { uiuxCategories, uiuxHeading, uiuxIndustry, uiuxSectionData, uiuxServiceHeading, uiuxServices, UiuxServices, uiuxSolutions, uiuxTech, WhatMakesUiux } from '@/data/UI-UX';
-import { webDevCategories, webDevIndustry, webDevSectionData, webDevServiceHeading, webDevServices, WebDevServices, webDevSolutions, webDevTech, WhatMakesWebDev } from '@/data/web-dev';
+import { imageWeb, webDevCategories, webDevIndustry, webDevSectionData, webDevServiceHeading, webDevServices, WebDevServices, webDevSolutions, webDevTech, WhatMakesWebDev } from '@/data/web-dev';
 
 export const metadata: Metadata = {
     title: 'Techlab | Web Development',
@@ -42,7 +42,7 @@ export default function Page() {
             <HeadingComponent sectionHeading={webDevServiceHeading} />
             <ServiceSolutionSection cards={cards} className='h-80 text-justify' />
             <Tabs blockChainSolutions={webDevSolutions} categories={webDevCategories} />
-            <BlueTagBanner sectionHeading={webDevTech} />
+            <BlueTagBanner sectionHeading={webDevTech} imageLayout={imageWeb} />
             <IndustrySections services={services} sectionHeading={webDevIndustry} />
             <WhatMakes sectionHeading2={sectionHeading2} aboutUsPoints={aboutUsPoints} images={images} />
             <Footer />

@@ -32,33 +32,33 @@ export const footerSectionData: FooterSectionProps = {
     title: 'Get Free Link',
     links: [
       {
-        label: 'Software Development',
-        href: '/',
+        label: 'BlockChain Development',
+        href: '/services/blockchain',
         openNewTab: false,
       },
       {
-        label: 'Data Analytics',
-        href: '/',
+        label: 'E-commerce Solutions',
+        href: '/services/ecommerce',
         openNewTab: false,
       },
       {
-        label: 'IT Consulting',
-        href: '/',
+        label: 'IOT Development',
+        href: '/services/IOT-development',
         openNewTab: false,
       },
       {
         label: 'UI/UX Design',
-        href: '/',
+        href: '/services/ui-ux',
         openNewTab: false,
       },
       {
-        label: 'Network Solutions',
-        href: '/',
+        label: 'Web Development',
+        href: '/services/web-dev',
         openNewTab: false,
       },
       {
         label: 'Others',
-        href: '/',
+        href: '/services',
         openNewTab: false,
       },
     ],

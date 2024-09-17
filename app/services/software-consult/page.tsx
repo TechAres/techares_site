@@ -9,7 +9,7 @@ import { IndustrySections } from '@/src/sections/service/Industry-service/Index'
 import { WhatMakes } from '@/src/sections/what-makes';
 import { ServiceSolutionSection } from '@/src/sections/services-solution';
 import { HeadingComponent } from '@/src/sections/service-text';
-import { softwareConsultCategories, softwareConsultHeading, softwareConsultIndustry, softwareConsultSectionData, softwareConsultServiceHeading, softwareConsultServices, SoftwareConsultServices, SoftwareConsultSolutions, softwareConsultTech, WhatMakesSoftwareConsult } from '@/data/software-consult';
+import { imageSoftwareConsult, softwareConsultCategories, softwareConsultHeading, softwareConsultIndustry, softwareConsultSectionData, softwareConsultServiceHeading, softwareConsultServices, SoftwareConsultServices, SoftwareConsultSolutions, softwareConsultTech, WhatMakesSoftwareConsult } from '@/data/software-consult';
 
 export const metadata: Metadata = {
     title: 'Techlab | Software Consulting',
@@ -41,7 +41,7 @@ export default function Page() {
             <HeadingComponent sectionHeading={softwareConsultServiceHeading} />
             <ServiceSolutionSection cards={cards} className='h-64 text-justify' />
             <Tabs blockChainSolutions={SoftwareConsultSolutions} categories={softwareConsultCategories} />
-            <BlueTagBanner sectionHeading={softwareConsultTech} />
+            <BlueTagBanner sectionHeading={softwareConsultTech} imageLayout={imageSoftwareConsult} />
             <IndustrySections services={services} sectionHeading={softwareConsultIndustry} />
             <WhatMakes sectionHeading2={sectionHeading2} aboutUsPoints={aboutUsPoints} images={images} />
             <Footer />

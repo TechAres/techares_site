@@ -9,7 +9,7 @@ import { IndustrySections } from '@/src/sections/service/Industry-service/Index'
 import { WhatMakes } from '@/src/sections/what-makes';
 import { ServiceSolutionSection } from '@/src/sections/services-solution';
 import { HeadingComponent } from '@/src/sections/service-text';
-import { databaseCategories, DatabaseHeading, databaseIndustry, databaseSectionData, DatabaseServiceHeading, databaseServices, DatabaseServices, databaseSolutions, databaseTech, WhatMakesDatabase } from '@/data/database-service';
+import { databaseCategories, DatabaseHeading, databaseIndustry, databaseSectionData, DatabaseServiceHeading, databaseServices, DatabaseServices, databaseSolutions, databaseTech, imageDatabase, WhatMakesDatabase } from '@/data/database-service';
 
 export const metadata: Metadata = {
     title: 'Techlab | Database Development',
@@ -41,7 +41,7 @@ export default function Page() {
             <HeadingComponent sectionHeading={DatabaseServiceHeading} />
             <ServiceSolutionSection cards={cards} className='h-80 text-justify' />
             <Tabs blockChainSolutions={databaseSolutions} categories={databaseCategories} />
-            <BlueTagBanner sectionHeading={databaseTech} />
+            <BlueTagBanner sectionHeading={databaseTech} imageLayout={imageDatabase} />
             <IndustrySections services={services} sectionHeading={databaseIndustry} />
             <WhatMakes sectionHeading2={sectionHeading2} aboutUsPoints={aboutUsPoints} images={images} />
             <Footer />

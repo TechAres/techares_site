@@ -1,5 +1,6 @@
 import { SectionHeadingWithoutStylingProps } from "@/src/components/section-heading/interface";
 import { ServicesProps } from "@/src/sections/blockChain-service";
+import { ImageLayout } from "@/src/sections/cta/tag-banner";
 import { ServiceSectionPropss } from "@/src/sections/service/v1";
 import { ServiceSectionProps } from "@/src/sections/serviceDetails";
 import { SoftwareDevelopmentPost, StandardPost } from "@/src/sections/tabs-software-development";
@@ -44,6 +45,11 @@ export const BlockchainServiceHeading: SectionHeadingWithoutStylingProps = {
   title: 'Blockchain Development Services',
   description: 'Leverage our technical expertise and industry experience to access a wide range of blockchain development services tailored to your unique business challenges. Here are some of our key services:'
 }
+export const imageBlockChain: ImageLayout = {
+  row1: ['/assets/images/landing/whychoose.png', '/assets/images/landing/whychoose.png', '/assets/images/landing/whychoose.png'], // First row (3 images)
+  row2: ['/assets/images/landing/whychoose.png', '/assets/images/landing/whychoose.png'], // Second row (2 images)
+  row3: ['/assets/images/landing/whychoose.png'], // Third row (1 image)
+};
 export const BlockChainServices: ServicesProps = {
   images: {
     image1: {

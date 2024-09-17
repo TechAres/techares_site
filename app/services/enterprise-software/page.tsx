@@ -9,7 +9,7 @@ import { IndustrySections } from '@/src/sections/service/Industry-service/Index'
 import { WhatMakes } from '@/src/sections/what-makes';
 import { ServiceSolutionSection } from '@/src/sections/services-solution';
 import { HeadingComponent } from '@/src/sections/service-text';
-import { enterpriceTech, enterpriseCategories, EnterpriseHeading, enterpriseIndustry, enterpriseSectionData, EnterpriseServiceHeading, enterpriseServices, EnterpriseServices, enterpriseSolutions, WhatMakesEnterprise } from '@/data/enterprise-services';
+import { enterpriceTech, enterpriseCategories, EnterpriseHeading, enterpriseIndustry, enterpriseSectionData, EnterpriseServiceHeading, enterpriseServices, EnterpriseServices, enterpriseSolutions, imageEnterprise, WhatMakesEnterprise } from '@/data/enterprise-services';
 
 export const metadata: Metadata = {
     title: 'Techlab | Enterprise Software Solutions',
@@ -41,7 +41,7 @@ export default function Page() {
             <HeadingComponent sectionHeading={EnterpriseServiceHeading} />
             <ServiceSolutionSection cards={cards} className='h-72 text-justify' />
             <Tabs blockChainSolutions={enterpriseSolutions} categories={enterpriseCategories} />
-            <BlueTagBanner sectionHeading={enterpriceTech} />
+            <BlueTagBanner sectionHeading={enterpriceTech} imageLayout={imageEnterprise} />
             <IndustrySections services={services} sectionHeading={enterpriseIndustry} />
             <WhatMakes sectionHeading2={sectionHeading2} aboutUsPoints={aboutUsPoints} images={images} />
             <Footer />

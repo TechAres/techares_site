@@ -17,9 +17,16 @@ export interface technologiesProps {
 const ctaSectionData: CtaSectionProps = {
     title: 'Technologies',
 };
-export interface BlueTagBannerProps extends SectionProps, technologiesProps { }
+export type ImageLayout = {
+    row1: string[];
+    row2: string[];
+    row3: string[];
+};
+export interface BlueTagBannerProps extends SectionProps, technologiesProps {
+    imageLayout: ImageLayout
+}
 
-export function BlueTagBanner({ className, sectionHeading }: BlueTagBannerProps) {
+export function BlueTagBanner({ className, sectionHeading, imageLayout }: BlueTagBannerProps) {
     const { title } = ctaSectionData;
     return (
         <section className={cn(className)}>
@@ -27,6 +34,56 @@ export function BlueTagBanner({ className, sectionHeading }: BlueTagBannerProps)
                 <div className="relative overflow-hidden rounded-5 bg-primary px-6 py-14">
                     <div className="relative z-10 mx-auto max-w-full rounded-5  text-center">
                         <ServiceHeading {...sectionHeading} />
+                        <div className="relative mt-10 flex justify-center items-center h-40">
+                            {/* Top row */}
+                            <div className="absolute flex space-x-8 top-0">
+                                {
+                                    imageLayout.row1.map((image, index) => (
+                                        <Image
+                                            src={image}
+                                            key={index}
+                                            alt="Image 1"
+                                            width={50}
+                                            height={50}
+                                            className="rounded-full"
+                                        />
+                                    ))
+                                }
+
+                            </div>
+
+                            {/* Middle row */}
+                            <div className="absolute flex space-x-10 top-1/2 transform -translate-y-1/2">
+                                {
+                                    imageLayout.row2.map((image, index) => (
+                                        <Image
+                                            src={image}
+                                            key={index}
+                                            alt="Image 1"
+                                            width={50}
+                                            height={50}
+                                            className="rounded-full"
+                                        />
+                                    ))
+                                }
+                            </div>
+
+                            {/* Bottom row */}
+                            <div className="absolute bottom-0">
+                                {
+                                    imageLayout.row3.map((image, index) => (
+                                        <Image
+                                            src={image}
+                                            key={index}
+                                            alt="Image 1"
+                                            width={50}
+                                            height={50}
+                                            className="rounded-full"
+                                        />
+                                    ))
+                                }
+                            </div>
+                        </div>
                     </div>
                     <Image
                         src="/assets/images/cta/pattern-1.png"

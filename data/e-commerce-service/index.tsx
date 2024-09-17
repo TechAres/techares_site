@@ -1,5 +1,6 @@
 import { SectionHeadingWithoutStylingProps } from "@/src/components/section-heading/interface";
 import { ServicesProps } from "@/src/sections/blockChain-service";
+import { ImageLayout } from "@/src/sections/cta/tag-banner";
 import { ServiceSectionPropss } from "@/src/sections/service/v1";
 import { ServiceSectionProps } from "@/src/sections/serviceDetails";
 import { SoftwareDevelopmentPost, StandardPost } from "@/src/sections/tabs-software-development";
@@ -537,3 +538,8 @@ export const ecommerceIndustry: SectionHeadingWithoutStylingProps = {
     title: "Industries We Serve",
     description: "As a top e-commerce solutions provider, we deliver comprehensive e-commerce solutions tailored to meet specific industry needs. Enhance your business capabilities with our e-commerce expertise and solutions to overcome industry challenges. We serve various industry verticals, including:"
 }
+export const imageEcommerce: ImageLayout = {
+    row1: ['/assets/images/landing/whychoose.png', '/assets/images/landing/whychoose.png', '/assets/images/landing/whychoose.png'], // First row (3 images)
+    row2: ['/assets/images/landing/whychoose.png', '/assets/images/landing/whychoose.png'], // Second row (2 images)
+    row3: ['/assets/images/landing/whychoose.png'], // Third row (1 image)
+};

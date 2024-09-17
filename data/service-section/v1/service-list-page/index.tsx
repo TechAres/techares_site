@@ -96,91 +96,91 @@ export const serviceSectionData: ServiceSectionPropss = {
       title: 'Blockchain Development',
       description:
         'Elevate your business operations with our innovative blockchain solutions designed to enhance security, transparency, and efficiency.',
-      slug: '/services/single',
+      slug: '/services/blockchain',
     },
     {
       icon: <Icon2 />,
       title: 'Cloud Application Development',
       description:
         'Transform your business with our cutting-edge cloud application development services, designed to deliver scalable, secure, and high-performance cloud solutions.',
-      slug: '/services/single',
+      slug: '/services/cloud-app',
     },
     {
       icon: <Icon3 />,
       title: 'Custom Software Development',
       description:
         'Upscale your business with our innovative and unique software solutions to gain the competitive advantage that enables new efficiencies and improves ROI.',
-      slug: '/services/single',
+      slug: '/services/custom-software',
     },
     {
       icon: <Icon4 />,
       title: 'Database Development and Integration',
       description:
         'Enhance your business operations with our advanced database development and integration services, designed to deliver scalable, secure, and high-performance data solutions',
-      slug: '/services/single',
+      slug: '/services/database-integration',
     },
     {
       icon: <Icon5 />,
       title: 'E-commerce Solutions',
       description:
         'Transform your online business with our comprehensive and innovative e-commerce solutions, designed to deliver seamless, scalable, and high-performance digital commerce experiences.',
-      slug: '/services/single',
+      slug: '/services/ecommerce',
     },
     {
       icon: <Icon6 />,
       title: 'Enterprise Software Solutions',
       description:
         'Revolutionize your business operations with our cutting-edge enterprise software solutions, designed to boost efficiency, productivity, and profitability.',
-      slug: '/services/single',
+      slug: '/services/enterprise-software',
     },
     {
       icon: <Icon6 />,
       title: 'IoT Development Services',
       description:
         'Transform your business operations and unlock new opportunities with our cutting-edge IoT development services, designed to enhance efficiency, productivity, and connectivity.',
-      slug: '/services/single',
+      slug: '/services/IOT-development',
     },
     {
       icon: <Icon6 />,
       title: 'IT Outsourcing Services',
       description:
         'Transform your business operations and achieve new efficiencies with our comprehensive IT outsourcing services, designed to meet your unique needs and drive growth.',
-      slug: '/services/single',
+      slug: '/services/IT-outsourcing',
     },
     {
       icon: <Icon6 />,
       title: 'Mobile App Development',
       description:
         'Transform your business with our state-of-the-art mobile app development solutions designed to enhance user engagement, improve functionality, and drive growth.',
-      slug: '/services/single',
+      slug: '/services/mobile-app',
     },
     {
       icon: <Icon6 />,
       title: 'Quality Assurance and Testing',
       description:
         'Ensure the highest quality of your software products with our comprehensive and meticulous QA and testing services, designed to deliver flawless and reliable solutions.',
-      slug: '/services/single',
+      slug: '/services/quality-assurance',
     },
     {
       icon: <Icon6 />,
       title: 'Software Consulting',
       description:
         'Transform your business with our expert software consulting services, designed to provide strategic guidance, innovative solutions, and measurable results.',
-      slug: '/services/single',
+      slug: '/services/software-consult',
     },
     {
       icon: <Icon6 />,
       title: 'UI/UX Design',
       description:
         'Elevate your business with our innovative and user-centric UI/UX design solutions, crafted to provide exceptional user experiences and drive business growth.',
-      slug: '/services/single',
+      slug: '/services/ui-ux',
     },
     {
       icon: <Icon6 />,
       title: 'Web Development',
       description:
         'Elevate your business with our cutting-edge web development solutions designed to enhance user engagement, improve functionality, and drive business growth.',
-      slug: '/services/single',
+      slug: '/services/web-dev',
     },
   ],
 };

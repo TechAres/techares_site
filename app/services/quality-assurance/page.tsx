@@ -9,7 +9,7 @@ import { IndustrySections } from '@/src/sections/service/Industry-service/Index'
 import { WhatMakes } from '@/src/sections/what-makes';
 import { ServiceSolutionSection } from '@/src/sections/services-solution';
 import { HeadingComponent } from '@/src/sections/service-text';
-import { qACategories, qAHeading, qAIndustry, qASectionData, QAServiceHeading, qAServices, QAServices, QASolutions, qATech, WhatMakesQa } from '@/data/quality-assurance';
+import { imageQa, qACategories, qAHeading, qAIndustry, qASectionData, QAServiceHeading, qAServices, QAServices, QASolutions, qATech, WhatMakesQa } from '@/data/quality-assurance';
 
 export const metadata: Metadata = {
     title: 'Techlab | Quality Assurance and Testing ',
@@ -41,7 +41,7 @@ export default function Page() {
             <HeadingComponent sectionHeading={QAServiceHeading} />
             <ServiceSolutionSection cards={cards} className='h-64 text-justify' />
             <Tabs blockChainSolutions={QASolutions} categories={qACategories} />
-            <BlueTagBanner sectionHeading={qATech} />
+            <BlueTagBanner sectionHeading={qATech} imageLayout={imageQa} />
             <IndustrySections services={services} sectionHeading={qAIndustry} />
             <WhatMakes sectionHeading2={sectionHeading2} aboutUsPoints={aboutUsPoints} images={images} />
             <Footer />

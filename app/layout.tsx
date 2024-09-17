@@ -7,6 +7,7 @@ import { cn } from '@/src/utils/shadcn';
 import { Toaster } from 'sonner';
 import { ThemeProvider } from '@/src/components/theme-provider';
 import { ModeToggle } from '@/src/components/mode-toggle';
+import { SocialIconsLeft } from '@/src/components/social-icons';
 
 interface Props {
   children: React.ReactNode;
@@ -44,6 +45,7 @@ export default async function RootLayout({ children }: Props) {
           >
             <main>{children}</main>
             <ModeToggle />
+            <SocialIconsLeft />
           </div>
         </ThemeProvider>
         <Toaster

@@ -30,7 +30,7 @@ export function AboutSection() {
     console.log(index % 2)
     if (index % 2 == 1) {
       return (
-        <section className="section-padding-primary overflow-hidden">
+        <section className="section-padding-primary overflow-hidden" key={index}>
           <Container>
             <div className="grid items-center gap-12 lg:grid-cols-[.92fr_1fr] 2xl:gap-20">
               {/* Content  */}
@@ -142,7 +142,7 @@ export function AboutSection() {
       );
     } else {
       return (
-        <section className="section-padding-primary overflow-hidden">
+        <section className="section-padding-primary overflow-hidden" key={index}>
           <Container>
             <div className="grid items-center gap-12 lg:grid-cols-[.92fr_1fr] 2xl:gap-20">
               {/* Images  */}

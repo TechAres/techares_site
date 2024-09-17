@@ -9,7 +9,7 @@ import { IndustrySections } from '@/src/sections/service/Industry-service/Index'
 import { WhatMakes } from '@/src/sections/what-makes';
 import { ServiceSolutionSection } from '@/src/sections/services-solution';
 import { HeadingComponent } from '@/src/sections/service-text';
-import { iotCategories, IotHeading, iotIndustry, iotSectionData, IotServiceHeading, iotServices, IotServices, IotSolutions, iotTech, WhatMakesIot } from '@/data/IOT-services';
+import { imageIot, iotCategories, IotHeading, iotIndustry, iotSectionData, IotServiceHeading, iotServices, IotServices, IotSolutions, iotTech, WhatMakesIot } from '@/data/IOT-services';
 
 export const metadata: Metadata = {
     title: 'Techlab | IOT - development',
@@ -41,7 +41,7 @@ export default function Page() {
             <HeadingComponent sectionHeading={IotServiceHeading} />
             <ServiceSolutionSection cards={cards} className='h-64 text-justify' />
             <Tabs blockChainSolutions={IotSolutions} categories={iotCategories} />
-            <BlueTagBanner sectionHeading={iotTech} />
+            <BlueTagBanner sectionHeading={iotTech} imageLayout={imageIot} />
             <IndustrySections services={services} sectionHeading={iotIndustry} />
             <WhatMakes sectionHeading2={sectionHeading2} aboutUsPoints={aboutUsPoints} images={images} />
             <Footer />

@@ -9,7 +9,7 @@ import { IndustrySections } from '@/src/sections/service/Industry-service/Index'
 import { WhatMakes } from '@/src/sections/what-makes';
 import { ServiceSolutionSection } from '@/src/sections/services-solution';
 import { HeadingComponent } from '@/src/sections/service-text';
-import { itCategories, ItHeading, itIndustry, itSectionData, ItServiceHeading, itServices, ItServices, ItSolutions, itTech, WhatMakesIt } from '@/data/IT-outsourcing';
+import { imageIt, itCategories, ItHeading, itIndustry, itSectionData, ItServiceHeading, itServices, ItServices, ItSolutions, itTech, WhatMakesIt } from '@/data/IT-outsourcing';
 
 export const metadata: Metadata = {
     title: 'Techlab | IT Outsourcing',
@@ -41,7 +41,7 @@ export default function Page() {
             <HeadingComponent sectionHeading={ItServiceHeading} />
             <ServiceSolutionSection cards={cards} className='h-64 text-justify' />
             <Tabs blockChainSolutions={ItSolutions} categories={itCategories} />
-            <BlueTagBanner sectionHeading={itTech} />
+            <BlueTagBanner sectionHeading={itTech} imageLayout={imageIt} />
             <IndustrySections services={services} sectionHeading={itIndustry} />
             <WhatMakes sectionHeading2={sectionHeading2} aboutUsPoints={aboutUsPoints} images={images} />
             <Footer />

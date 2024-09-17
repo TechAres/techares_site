@@ -9,7 +9,7 @@ import { IndustrySections } from '@/src/sections/service/Industry-service/Index'
 import { WhatMakes } from '@/src/sections/what-makes';
 import { ServiceSolutionSection } from '@/src/sections/services-solution';
 import { HeadingComponent } from '@/src/sections/service-text';
-import { uiuxCategories, uiuxHeading, uiuxIndustry, uiuxSectionData, uiuxServiceHeading, uiuxServices, UiuxServices, uiuxSolutions, uiuxTech, WhatMakesUiux } from '@/data/UI-UX';
+import { imageUiux, uiuxCategories, uiuxHeading, uiuxIndustry, uiuxSectionData, uiuxServiceHeading, uiuxServices, UiuxServices, uiuxSolutions, uiuxTech, WhatMakesUiux } from '@/data/UI-UX';
 
 export const metadata: Metadata = {
     title: 'Techlab | UI_UX Design',
@@ -41,7 +41,7 @@ export default function Page() {
             <HeadingComponent sectionHeading={uiuxServiceHeading} />
             <ServiceSolutionSection cards={cards} className='h-64 text-justify' />
             <Tabs blockChainSolutions={uiuxSolutions} categories={uiuxCategories} />
-            <BlueTagBanner sectionHeading={uiuxTech} />
+            <BlueTagBanner sectionHeading={uiuxTech} imageLayout={imageUiux} />
             <IndustrySections services={services} sectionHeading={uiuxIndustry} />
             <WhatMakes sectionHeading2={sectionHeading2} aboutUsPoints={aboutUsPoints} images={images} />
             <Footer />

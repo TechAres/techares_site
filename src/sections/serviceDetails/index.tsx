@@ -8,7 +8,6 @@ import {
 } from '@/src/components/cards/project/v2';
 import { Button } from '@/src/components/button';
 import { Container } from '@/src/components/container';
-import { CustomLink } from '@/src/components/custom-link';
 import { cn } from '@/src/utils/shadcn';
 import React, { useEffect, useRef, useState } from 'react';
 import Lightbox, { Slide } from 'yet-another-react-lightbox';
@@ -61,7 +60,7 @@ export function ServiceSection({
             layoutMode: 'fitRows',
             filter: activeFilter,  // Apply the initial filter
         });
-    }, []);
+    }, [activeFilter]);
 
     useEffect(() => {
         // Apply filter whenever it changes

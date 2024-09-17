@@ -9,7 +9,7 @@ import { IndustrySections } from '@/src/sections/service/Industry-service/Index'
 import { WhatMakes } from '@/src/sections/what-makes';
 import { ServiceSolutionSection } from '@/src/sections/services-solution';
 import { HeadingComponent } from '@/src/sections/service-text';
-import { mobileAppCategories, mobileAppHeading, mobileAppIndustry, mobileAppSectionData, MobileAppServiceHeading, mobileAppServices, MobileAppServices, MobileAppSolutions, mobileAppTech, WhatMakesMobileApp } from '@/data/mobileapp-service';
+import { imageMobile, mobileAppCategories, mobileAppHeading, mobileAppIndustry, mobileAppSectionData, MobileAppServiceHeading, mobileAppServices, MobileAppServices, MobileAppSolutions, mobileAppTech, WhatMakesMobileApp } from '@/data/mobileapp-service';
 
 export const metadata: Metadata = {
     title: 'Techlab | Mobile App Development ',
@@ -41,7 +41,7 @@ export default function Page() {
             <HeadingComponent sectionHeading={MobileAppServiceHeading} />
             <ServiceSolutionSection cards={cards} className='h-96 text-justify' />
             <Tabs blockChainSolutions={MobileAppSolutions} categories={mobileAppCategories} />
-            <BlueTagBanner sectionHeading={mobileAppTech} />
+            <BlueTagBanner sectionHeading={mobileAppTech} imageLayout={imageMobile} />
             <IndustrySections services={services} sectionHeading={mobileAppIndustry} />
             <WhatMakes sectionHeading2={sectionHeading2} aboutUsPoints={aboutUsPoints} images={images} />
             <Footer />

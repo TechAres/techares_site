@@ -1,7 +1,7 @@
 
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 import { SoftwareDevelopmentPost, StandardPost } from '../tabs-software-development';
-import { SectionHeadingProps, SectionHeadingWithoutStylingProps } from '@/src/components/section-heading/interface';
+import { SectionHeadingWithoutStylingProps } from '@/src/components/section-heading/interface';
 import { ServiceHeading } from '../blockChain-service/Service-Heading';
 type Post = SoftwareDevelopmentPost | StandardPost;
 type Category = {
