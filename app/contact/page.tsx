@@ -1,8 +1,10 @@
+import { projectSectionData } from '@/data/project-section/v1/home-page';
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
 import { ContactSection } from '@/src/sections/contact/v2';
 import { HeroSection } from '@/src/sections/hero/v3';
 import { MapSection } from '@/src/sections/map-section';
+import { ProjectSection } from '@/src/sections/project/v1';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,8 +14,9 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <>
-      <MainHeader version="2" />
+    <div>
+      <MainHeader version="1" />
+
       <HeroSection
         title="Contact Us"
         breadcrumbItems={[
@@ -26,9 +29,10 @@ export default function Page() {
           },
         ]}
       />
+      <ProjectSection {...projectSectionData} />
       <ContactSection />
-      <MapSection />
+      {/* <MapSection /> */}
       <Footer />
-    </>
+    </div>
   );
 }

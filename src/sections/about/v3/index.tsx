@@ -17,8 +17,8 @@ export interface AboutSectionThreeProps {
     sectionHeading: SectionHeadingWithoutStylingProps;
 }
 
-export function AboutSectionThree() {
-    const { images, sectionHeading } = aboutSectionThreeData;
+export function AboutSectionThree({ images, sectionHeading }: AboutSectionThreeProps) {
+
     return (
         <section className="section-padding-primary overflow-hidden">
             <Container>

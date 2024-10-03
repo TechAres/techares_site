@@ -31,6 +31,51 @@ function Icon2() {
   );
 }
 
+export const homeAboutData = {
+  images: {
+    image1: {
+      src: '/assets/images/about/about-1.png',
+      alt: 'about one',
+      width: 195,
+      height: 132,
+    },
+    image2: {
+      src: '/assets/images/about/about-2.png',
+      alt: 'about two',
+      width: 312,
+      height: 304,
+    },
+    image3: {
+      src: '/assets/images/about/about-3.png',
+      alt: 'about three',
+      width: 250,
+      height: 265,
+    },
+    image4: {
+      src: '/assets/images/about/about-4.png',
+      alt: 'about four',
+      width: 250,
+      height: 265,
+    },
+  },
+  sectionHeading: {
+    subtitle: 'About Us',
+    title: 'Who We Are',
+    description:
+      'Techares is a premier IT solutions provider committed to transforming businesses through cutting-edge technology. With over a decade of experience, we specialize in delivering bespoke software solutions, IT consulting, and comprehensive IT outsourcing services to clients worldwide. Our team of 250+ skilled professionals is dedicated to driving business success through innovation and excellence.',
+  },
+  keyPoints: [
+    {
+      icon: <Icon1 />,
+      title: 'Cloud Migrate Pro',
+    },
+    {
+      icon: <Icon2 />,
+      title: 'AI Forge Labs',
+    },
+  ],
+}
+
 export const aboutSectionData: AboutSectionProps = {
   images: {
     image1: {

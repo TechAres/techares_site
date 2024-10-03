@@ -1,3 +1,4 @@
+import { aboutSectionThreeData } from '@/data/about-section/v3';
 import { workprocessSectionData } from '@/data/work-process/v1';
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
@@ -20,8 +21,9 @@ export const metadata: Metadata = {
 
 export default function Page() {
   const { cards } = workprocessSectionData
+  const { images, sectionHeading } = aboutSectionThreeData;
   return (
-    <>
+    <div>
       <MainHeader version="1" />
       <HeroSection
         title="About Us"
@@ -42,11 +44,11 @@ export default function Page() {
       <AboutSectionTwo />
       <CtaSection />
       <OurJourney />
-      <AboutSectionThree />
+      <AboutSectionThree images={images} sectionHeading={sectionHeading} />
       <WhyChooseUs />
       <TestimonialSection />
       <ContactSection />
       <Footer />
-    </>
+    </div>
   );
 }

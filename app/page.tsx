@@ -18,6 +18,10 @@ import { TeamSection } from '@/src/sections/team/v1';
 import { TestimonialSection } from '@/src/sections/testimonial/v1';
 import { Metadata } from 'next';
 import { WorkprocessSection } from '@/src/sections/work-process/v1';
+import { AboutSectionThree } from '@/src/sections/about/v3';
+import { homeAboutData } from '@/data/about-section/v1';
+
+import { AboutSection as AboutSectionTwo } from '@/src/sections/about/v2';
 
 export const metadata: Metadata = {
   title: 'Techlab | Home',
@@ -25,17 +29,20 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  const { images, sectionHeading } = homeAboutData
   return (
-    <>
+    <div>
       <MainHeader version="1" />
       <Hero />
-      <AboutSection />
-      <Tabs />
+      <AboutSectionThree images={images} sectionHeading={sectionHeading} />
+      <ProjectSection {...projectSectionData} />
+      <AboutSectionTwo />
+      {/* <Tabs /> */}
       <WorkprocessSection />
       {/* <PricingSection /> */}
       <CtaSection />
-      
-      <ProjectSection {...projectSectionData} />
+
+
       <WhyChooseSection />
       {/* <ServiceSection className="!pb-0" {...serviceSectionData} />
       
@@ -48,6 +55,6 @@ export default function Page() {
       <ContactSection />
       <BlogSection /> */}
       <Footer />
-    </>
+    </div>
   );
 }
