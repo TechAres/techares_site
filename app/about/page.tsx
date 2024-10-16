@@ -24,7 +24,7 @@ export default function Page() {
   const { cards } = workprocessSectionData
   const { images, sectionHeading } = aboutSectionThreeData;
   return (
-    <div>
+    <>
       <MainHeader version="1" />
       <HeroSection
         title="About Us"
@@ -50,6 +50,6 @@ export default function Page() {
       <TestimonialSection />
       <ContactSection />
       <Footer />
-    </div>
+    </>
   );
 }

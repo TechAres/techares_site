@@ -41,11 +41,11 @@ export function ProjectSection({
                     : 'fade-up'
                 }
                 data-aos-delay={getStaggeredDelay([200, 350, 500, 650], index)}
-                className={cn(
-                  isWave
-                    ? getStaggeredDelay(['lg:mt-[70px]', 'mt-0'], index)
-                    : ''
-                )}
+              // className={cn(
+              //   isWave
+              //     ? getStaggeredDelay(['lg:mt-[70px]', 'mt-0'], index)
+              //     : ''
+              // )}
               >
                 <ProjectCard {...work} />
               </div>

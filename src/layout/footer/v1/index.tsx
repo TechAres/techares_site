@@ -82,7 +82,7 @@ export function Footer({ className }: SectionProps) {
             <div data-aos="fade-up" data-aos-delay="200">
               <BrandLogo />
               <p className="mb-7 mt-3">{about.description}</p>
-              {/* {about.socialLinks && about.socialLinks.length > 0 && (
+              {about.socialLinks && about.socialLinks.length > 0 && (
                 <nav aria-label="social links">
                   <ul className="inline-flex min-h-[50px] items-center divide-x rounded-5 bg-primary  text-white">
                     {about.socialLinks.map((socialLink, index) => (
@@ -99,7 +99,7 @@ export function Footer({ className }: SectionProps) {
                     ))}
                   </ul>
                 </nav>
-              )} */}
+              )}
             </div>
 
             {/* Column one  */}

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div>
+    <>
       <MainHeader version="1" />
 
       <HeroSection
@@ -33,6 +33,6 @@ export default function Page() {
       <ContactSection />
       {/* <MapSection /> */}
       <Footer />
-    </div>
+    </>
   );
 }

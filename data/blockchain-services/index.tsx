@@ -38,8 +38,8 @@ function Icon2() {
   );
 }
 export const BlockchainHeading: SectionHeadingWithoutStylingProps = {
-  title: 'Premier Blockchain Development Company',
-  description: 'Elevate your business operations with our innovative blockchain solutions designed to enhance security, transparency, and efficiency.'
+  title: 'Latest Portfolio',
+  subtitle: "Where Innovation Meets IT Excellence"
 }
 export const BlockchainServiceHeading: SectionHeadingWithoutStylingProps = {
   title: 'Blockchain Development Services',

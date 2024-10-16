@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 export default function Page() {
   const { images, sectionHeading } = homeAboutData
   return (
-    <div>
+    <>
       <MainHeader version="1" />
       <Hero />
       <AboutSectionThree images={images} sectionHeading={sectionHeading} />
@@ -51,6 +51,6 @@ export default function Page() {
       <ContactSection />
       {/* <BlogSection />  */}
       <Footer />
-    </div>
+    </>
   );
 }

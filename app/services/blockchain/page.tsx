@@ -17,8 +17,12 @@ import { StatisticsSection } from '@/src/sections/statistics/v1';
 import { ServiceSection } from '@/src/sections/service/v1';
 import { serviceSectionData } from '@/data/service-section/v1/service-list-page';
 import { AboutSection as AboutSectionTwo } from '@/src/sections/about/v2';
+import { ServiceSection as ServiceSections } from '@/src/sections/service/v2';
 import { TeamSection } from '@/src/sections/team/v1';
 import { CtaSection } from '@/src/sections/cta/v2';
+import { BlogSection } from '@/src/sections/blog/v1';
+import { serviceSectionData as serviceSectionData2 } from '@/data/service-section/v2/home-page-2';
+import { Hero } from '@/src/sections/Hero-service';
 
 export const metadata: Metadata = {
     title: 'Techlab | Service',
@@ -33,7 +37,7 @@ export default function Page() {
     return (
         <>
             <MainHeader version="1" />
-            <HeroSection
+            {/* <HeroSection
                 title="Premier Blockchain Development"
                 breadcrumbItems={[
                     {
@@ -44,7 +48,8 @@ export default function Page() {
                         label: 'Services',
                     },
                 ]}
-            />
+            /> */}
+            <Hero />
             {/* <HeadingComponent sectionHeading={BlockchainHeading} />
             <BlockchainDevelopmentServices sectionHeading={sectionHeading} description={description} images={images} />
             <HeadingComponent sectionHeading={BlockchainServiceHeading} />
@@ -56,10 +61,12 @@ export default function Page() {
             <AboutSectionThree images={images} sectionHeading={sectionHeading} />
             <ServiceSection {...serviceSectionData} />
             <TeamSection />
-            <StatisticsSection />
+            <StatisticsSection sectionHeading={BlockchainHeading} className="my-[80px]" />
+            <ServiceSections className="!pt-0" {...serviceSectionData2} />
             <AboutSectionTwo />
             <CtaSection />
             <FAQSection />
+            <BlogSection />
             <Footer />
         </>
     );
