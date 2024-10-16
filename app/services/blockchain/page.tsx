@@ -11,6 +11,14 @@ import { IndustrySections } from '@/src/sections/service/Industry-service/Index'
 import { WhatMakes } from '@/src/sections/what-makes';
 import { HeadingComponent } from '@/src/sections/service-text';
 import { ServiceSolutionSection } from '@/src/sections/services-solution';
+import FAQSection from '@/src/sections/faq';
+import { AboutSectionThree } from '@/src/sections/about/v3';
+import { StatisticsSection } from '@/src/sections/statistics/v1';
+import { ServiceSection } from '@/src/sections/service/v1';
+import { serviceSectionData } from '@/data/service-section/v1/service-list-page';
+import { AboutSection as AboutSectionTwo } from '@/src/sections/about/v2';
+import { TeamSection } from '@/src/sections/team/v1';
+import { CtaSection } from '@/src/sections/cta/v2';
 
 export const metadata: Metadata = {
     title: 'Techlab | Service',
@@ -37,14 +45,21 @@ export default function Page() {
                     },
                 ]}
             />
-            <HeadingComponent sectionHeading={BlockchainHeading} />
+            {/* <HeadingComponent sectionHeading={BlockchainHeading} />
             <BlockchainDevelopmentServices sectionHeading={sectionHeading} description={description} images={images} />
             <HeadingComponent sectionHeading={BlockchainServiceHeading} />
             <ServiceSolutionSection cards={cards} className='h-72 text-justify' />
             <Tabs blockChainSolutions={blockChainSolutions} categories={blockchainCategories} />
             <BlueTagBanner sectionHeading={blockChainTech} imageLayout={imageBlockChain} />
             <IndustrySections services={services} sectionHeading={IndustryWeServe} />
-            <WhatMakes sectionHeading2={sectionHeading2} aboutUsPoints={aboutUsPoints} images={images} />
+            <WhatMakes sectionHeading2={sectionHeading2} aboutUsPoints={aboutUsPoints} images={images} /> */}
+            <AboutSectionThree images={images} sectionHeading={sectionHeading} />
+            <ServiceSection {...serviceSectionData} />
+            <TeamSection />
+            <StatisticsSection />
+            <AboutSectionTwo />
+            <CtaSection />
+            <FAQSection />
             <Footer />
         </>
     );

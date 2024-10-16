@@ -43,6 +43,7 @@ module.exports = {
           900: '#141416',
         },
         body: '#BEBEBE',
+        'custom-blue': '#264B68',
       },
       backgroundImage: {
         'gradient-1': 'linear-gradient(180deg,var(--tw-gradient-stops))',

@@ -30,7 +30,7 @@ export function ProjectCard({
   return (
     <CustomLink
       href={slug}
-      className="group/portfolio relative z-1 block aspect-[640/916] overflow-hidden rounded-5 p-6 md:p-[1.875rem]"
+      className="group/portfolio relative z-1 block aspect-[640/716] overflow-hidden rounded-5 p-6 md:p-[1.875rem]"
     >
       <span
         className={cn(

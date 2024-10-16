@@ -64,6 +64,7 @@ const textColor = cn(
   'transition-colors duration-300 hover:text-primary dark:hover:text-white'
 );
 
+
 export function Footer({ className }: SectionProps) {
   const { about, columnOne, columnTwo, columnThree, footerBottom } =
     footerSectionData;
@@ -81,7 +82,7 @@ export function Footer({ className }: SectionProps) {
             <div data-aos="fade-up" data-aos-delay="200">
               <BrandLogo />
               <p className="mb-7 mt-3">{about.description}</p>
-              {about.socialLinks && about.socialLinks.length > 0 && (
+              {/* {about.socialLinks && about.socialLinks.length > 0 && (
                 <nav aria-label="social links">
                   <ul className="inline-flex min-h-[50px] items-center divide-x rounded-5 bg-primary  text-white">
                     {about.socialLinks.map((socialLink, index) => (
@@ -98,7 +99,7 @@ export function Footer({ className }: SectionProps) {
                     ))}
                   </ul>
                 </nav>
-              )}
+              )} */}
             </div>
 
             {/* Column one  */}
@@ -129,55 +130,7 @@ export function Footer({ className }: SectionProps) {
               )}
             </div>
 
-            {/* Column Two  */}
-            <div data-aos="fade-up" data-aos-delay="600">
-              <h3 className={titleClasses}>{columnTwo.title}</h3>
-              <ul aria-label="addresses" className="grid gap-5">
-                <li className={addressItemClasses}>
-                  <span className={addressIconParentClasses}>
-                    <FaPaperPlane />
-                  </span>
-                  <address className="not-italic">{columnTwo.location}</address>
-                </li>
-                <li className={addressItemClasses}>
-                  <span className={addressIconParentClasses}>
-                    <FaEnvelope />
-                  </span>
-                  {columnTwo.mails && columnTwo.mails.length > 0 && (
-                    <div className="grid gap-1">
-                      {columnTwo.mails.map((mail, index) => (
-                        <a
-                          key={index}
-                          href={`mailto:${mail}`}
-                          className={textColor}
-                        >
-                          {mail}
-                        </a>
-                      ))}
-                    </div>
-                  )}
-                </li>
-                <li className={addressItemClasses}>
-                  <span className={addressIconParentClasses}>
-                    <FaPhone />
-                  </span>
-                  {columnTwo.phoneNumbers &&
-                    columnTwo.phoneNumbers.length > 0 && (
-                      <div className="grid gap-1">
-                        {columnTwo.phoneNumbers.map((phoneNumber, index) => (
-                          <a
-                            key={index}
-                            href={`tel:${phoneNumber.split(' ').join('')}`}
-                            className={textColor}
-                          >
-                            {phoneNumber}
-                          </a>
-                        ))}
-                      </div>
-                    )}
-                </li>
-              </ul>
-            </div>
+
 
             {/* Column three  */}
             <div data-aos="fade-up" data-aos-delay="800">
@@ -218,6 +171,20 @@ export function Footer({ className }: SectionProps) {
                   ))}
                 </div>
               )}
+            </div>
+            {/* Column Two  */}
+            <div data-aos="fade-up" data-aos-delay="600">
+              <h3 className={titleClasses}>{columnTwo.title}</h3>
+              <div className="flex items-center p-2  w-full max-w-md">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="p-2 w-full text-black bg-custom-blue rounded-l-md focus:outline-none"
+                />
+                <button className="p-2 bg-white text-black rounded-r-md">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
         </Container>

@@ -11,6 +11,7 @@ import { CtaSection } from '@/src/sections/cta/v1';
 import { HeroSection } from '@/src/sections/hero/v3';
 import { IndustrySections } from '@/src/sections/service/Industry-service/Index';
 import { TestimonialSection } from '@/src/sections/testimonial/v1';
+import { WorkprocessSection } from '@/src/sections/work-process/v1';
 import { WhyChooseUs } from '@/src/sections/work-process/v2';
 import { Metadata } from 'next';
 
@@ -39,8 +40,8 @@ export default function Page() {
       />
       <AboutSection />
       <IndustrySections services={cards} />
-      {//<WorkprocessSection />
-      }
+      <WorkprocessSection />
+
       <AboutSectionTwo />
       <CtaSection />
       <OurJourney />

@@ -39,21 +39,17 @@ export default function Page() {
       <AboutSectionTwo />
       {/* <Tabs /> */}
       <WorkprocessSection />
-      {/* <PricingSection /> */}
-      <CtaSection />
+      {/* <CtaSection /> */}
 
 
       <WhyChooseSection />
-      {/* <ServiceSection className="!pb-0" {...serviceSectionData} />
-      
-      
-      <ProjectSection {...projectSectionData} />
-      <StatisticsSection />
-      <TestimonialSection />
-      <PricingSection />
-      <TeamSection />
+      {/* <ServiceSection className="!pb-0" {...serviceSectionData} />*/}
+      {/* <StatisticsSection /> */}
+      {/* <TestimonialSection />
+      <PricingSection /> */}
+      {/* <TeamSection /> */}
       <ContactSection />
-      <BlogSection /> */}
+      {/* <BlogSection />  */}
       <Footer />
     </div>
   );

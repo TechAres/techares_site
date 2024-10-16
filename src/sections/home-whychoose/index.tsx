@@ -29,7 +29,7 @@ export function WhyChooseSection() {
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-[.92fr_1fr] 2xl:gap-20">
           {/* Content  */}
-          <div className="lg:order-2" data-aos="fade-left" data-aos-delay="200">
+          <div className="lg:order-1" data-aos="fade-left" data-aos-delay="200">
             {/* <SectionHeading {...sectionHeading} /> */}
             <h2 className="font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
               WHY CHOOSE US?

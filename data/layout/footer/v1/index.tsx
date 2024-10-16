@@ -21,7 +21,7 @@ export const footerSectionData: FooterSectionProps = {
     ],
   },
   columnOne: {
-    title: 'Get Free Link',
+    title: 'Our Services',
     links: [
       {
         label: 'BlockChain Development',
@@ -56,7 +56,7 @@ export const footerSectionData: FooterSectionProps = {
     ],
   },
   columnTwo: {
-    title: 'Address',
+    title: 'Get Instant Updates',
     location: '2972 Westheimer Rd. Santa Ana, Illinois 85486 ',
     mails: ['contact@techares.com'],
     phoneNumbers: ['+91 93635 37370'],
