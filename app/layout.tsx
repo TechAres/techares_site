@@ -44,8 +44,14 @@ export default async function RootLayout({ children }: Props) {
             )}
           >
             <main>{children}</main>
-            <ModeToggle />
-            <SocialIconsLeft />
+            <div className="hidden lg:block">
+              <ModeToggle />
+            </div>
+
+            {/* SocialIconsLeft: Only visible on large screens */}
+            <div className="hidden lg:block">
+              <SocialIconsLeft />
+            </div>
           </div>
         </ThemeProvider>
         <Toaster
