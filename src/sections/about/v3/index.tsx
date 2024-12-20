@@ -23,15 +23,6 @@ export function AboutSectionThree({ images, sectionHeading }: AboutSectionThreeP
         <section className="section-padding-primary overflow-hidden">
             <Container>
                 <div className="grid items-center gap-12 lg:grid-cols-[.92fr_1fr] 2xl:gap-20">
-                    {/* Content  */}
-                    <div data-aos="fade-left" data-aos-delay="200">
-                        <h2 className="font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
-                            {sectionHeading.title}
-                        </h2>
-                        <p>
-                            {sectionHeading.description}
-                        </p>
-                    </div>
                     {/* Images  */}
                     {images && (
                         <div className="mx-auto text-center">
@@ -126,6 +117,16 @@ export function AboutSectionThree({ images, sectionHeading }: AboutSectionThreeP
                             </div>
                         </div>
                     )}
+                    {/* Content  */}
+                    <div data-aos="fade-left" data-aos-delay="200">
+                        <h2 className="font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
+                            {sectionHeading.title}
+                        </h2>
+                        <p>
+                            {sectionHeading.description}
+                        </p>
+                    </div>
+
                 </div>
             </Container>
         </section>

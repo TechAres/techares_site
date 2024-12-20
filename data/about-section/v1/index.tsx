@@ -59,10 +59,9 @@ export const homeAboutData = {
     },
   },
   sectionHeading: {
-    subtitle: 'About Us',
-    title: 'Who We Are',
+    title: 'Top-Notch Web Development Company',
     description:
-      'Techares is a premier IT solutions provider committed to transforming businesses through cutting-edge technology. With over a decade of experience, we specialize in delivering bespoke software solutions, IT consulting, and comprehensive IT outsourcing services to clients worldwide. Our team of 250+ skilled professionals is dedicated to driving business success through innovation and excellence.',
+      'Techares is a premier software development company committed to crafting robust, scalable, and user-focused digital solutions. By leveraging innovative technologies, we empower businesses to achieve their goals through intelligent, efficient, and tailored applications. With experienced professionals and a customer-centric approach, Techares is your partner in turning ambitious ideas into tangible success.',
   },
   keyPoints: [
     {

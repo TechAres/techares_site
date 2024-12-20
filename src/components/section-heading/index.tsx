@@ -34,7 +34,7 @@ export function SectionHeading({
           {subtitle}
         </span>
       )}
-      <h2 className="font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
+      <h2 className={"font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl"}>
         {title}
       </h2>
       {description && (
