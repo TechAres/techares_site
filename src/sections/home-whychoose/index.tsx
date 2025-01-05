@@ -32,30 +32,18 @@ export function WhyChooseSection() {
           <div className="lg:order-1" data-aos="fade-left" data-aos-delay="200">
             {/* <SectionHeading {...sectionHeading} /> */}
             <h2 className="font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
-              WHY CHOOSE US?
+              Why Choose Techares?
             </h2>
             <h6 className="text-sky-500">
-              MAXIMIZING OPPORTUNITIES FOR BUSINESSES WITH OUR VALUES
+
             </h6>
-            <p>
-              Techares is your one-stop solution for all your software
-              development demands and requirements. From concept ideation to
-              post-launch support, our comprehensive services cover every stage
-              of the software lifecycle. With a proven track record of
-              delivering exceptional solutions, we have garnered a reputation as
-              a leading force in the industry. We value your feedback and work
-              collaboratively with you to address any concerns, ensuring that
-              the final product is precisely what you envision.
+            <p className='text-justify'>
+              Techares stands out as a leader in delivering exceptional software solutions designed to address real-world challenges. With a seasoned team of developers, designers, and strategists, we blend innovation with practicality to achieve measurable results.
             </p>
 
-            <p className="mt-2">
-              Our tailored approach ensures that we understand your specific
-              requirements and deliver results that exceed expectations. Our
-              team consists of seasoned professionals and creative minds who
-              thrive on pushing the boundaries of technology, bringing fresh
-              perspectives and ingenious solutions to every project. We keep you
-              involved at every stage, providing transparent communication and
-              delivering on time and within budget.
+            <p className="mt-2 text-justify">
+              Our customer-first approach ensures every project aligns perfectly with your goals. We embrace cutting-edge technologies to provide tailored, scalable solutions that grow with your business. Beyond development, we focus on end-to-end support, from initial consultations to post-launch maintenance, ensuring your success every step of the way.
+              Partner with Techares for a commitment to quality, reliable execution, and a shared passion for excellence. Together, let’s bring your ideas to life and drive your business forward.
             </p>
           </div>
 

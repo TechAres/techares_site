@@ -59,10 +59,10 @@ export const homeWhyChooseData: HomeWhyChooseProps = {
     },
   },
   sectionHeading: {
-    subtitle: 'About us',
-    title: 'Empowering Your Digital Tomorrow',
+    // subtitle: 'About us',
+    title: 'Why Choose Techares?',
     description:
-      'It is a long established fact that a reader will be distracted by the readablejk content of a page when looking at its layout. Lorem Ipsum is simply dum text of the printing and typesetting industry loren ipsum',
+      `Techares stands out as a leader in delivering exceptional software solutions designed to address real-world challenges. With a seasoned team of developers, designers, and strategists, we blend innovation with practicality to achieve measurable results. Our customer-first approach ensures every project aligns perfectly with your goals. We embrace cutting-edge technologies to provide tailored, scalable solutions that grow with your business. Beyond development, we focus on end-to-end support, from initial consultations to post-launch maintenance, ensuring your success every step of the way.`,
   },
   keyPoints: [
     {

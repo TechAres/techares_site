@@ -7,7 +7,8 @@ import Tabs from '@/src/sections/tabs-software-development';
 import { Solutions } from '@/src/sections/solutions';
 import { BlogSection } from '@/src/sections/blog/v1';
 import { ContactSection } from '@/src/sections/contact/v1';
-import { CtaSection } from '@/src/sections/cta/v1';
+import { CtaSection } from '@/src/sections/cta/v2';
+import { CtaSection as CtaSection2 } from '@/src/sections/cta/v1';
 import { Hero } from '@/src/sections/hero/v1';
 import { ProjectSection } from '@/src/sections/project/v1';
 import { PricingSection } from '@/src/sections/pricing/version-1';
@@ -26,6 +27,9 @@ import ServicesContainer from '@/src/sections/services';
 import { services } from '@/data/home-services';
 import IndustriesGrid from '@/src/sections/industries-section';
 import { sampleIndustries } from '@/data/home-industries';
+import InfographicSteps from '@/src/sections/methodolgies';
+import { steps } from '@/data/methodoligies';
+import ScrollableRoadmap from '@/src/sections/our-solutions';
 
 export const metadata: Metadata = {
   title: 'Techlab | Home',
@@ -41,15 +45,21 @@ export default function Page() {
       <Hero />
       <AboutSectionThree images={images} sectionHeading={sectionHeading} />
       <ServicesContainer services={services} />
-      <IndustriesGrid industries={sampleIndustries} />
-      <ProjectSection {...projectSectionData} />
-      <AboutSectionTwo />
-      {/* <Tabs /> */}
-      <WorkprocessSection />
+      <ScrollableRoadmap />
       <CtaSection />
-
-
+      <IndustriesGrid industries={sampleIndustries} />
+      <TestimonialSection />
+      <InfographicSteps steps={steps} />
+      <CtaSection2 />
       <WhyChooseSection />
+
+      {/* <ProjectSection {...projectSectionData} /> */}
+      {/* <AboutSectionTwo /> */}
+      {/* <Tabs /> */}
+      {/* <WorkprocessSection />
+      <CtaSection /> */}
+
+
       {/* <ServiceSection className="!pb-0" {...serviceSectionData} />*/}
       {/* <StatisticsSection /> */}
       {/* <TestimonialSection />

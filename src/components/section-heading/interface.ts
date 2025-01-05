@@ -5,7 +5,7 @@ type Alignment = 'start' | 'center' | 'end';
 export interface SectionHeadingProps {
   subtitle?: string;
   title: ReactNode | string | ReactElement;
-  description?: string;
+  description?: string | ReactElement;
   alignment?: Alignment;
   hasBottomSpacing?: boolean;
   className?: ClassValue;

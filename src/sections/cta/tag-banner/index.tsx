@@ -11,7 +11,7 @@ export interface CtaSectionProps {
     title: string;
 }
 export interface technologiesProps {
-    sectionHeading: SectionHeadingWithoutStylingProps
+    techSectionHeading: SectionHeadingWithoutStylingProps
 }
 
 const ctaSectionData: CtaSectionProps = {
@@ -26,14 +26,14 @@ export interface BlueTagBannerProps extends SectionProps, technologiesProps {
     imageLayout: ImageLayout
 }
 
-export function BlueTagBanner({ className, sectionHeading, imageLayout }: BlueTagBannerProps) {
+export function BlueTagBanner({ className, sectionHeading, imageLayout, techSectionHeading }: BlueTagBannerProps) {
     const { title } = ctaSectionData;
     return (
         <section className={cn(className)}>
             <Container>
                 <div className="relative overflow-hidden rounded-5 bg-primary px-6 py-14">
                     <div className="relative z-10 mx-auto max-w-full rounded-5  text-center">
-                        <ServiceHeading {...sectionHeading} />
+                        <ServiceHeading {...techSectionHeading} />
                         <div className="relative mt-10 flex justify-center items-center h-40">
                             {/* Top row */}
                             <div className="absolute flex space-x-8 top-0">
