@@ -50,7 +50,7 @@ export default function ScrollableRoadmap() {
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                                    className="bg-white rounded-lg shadow-lg p-6"
+                                    className="bg-[#0f0f0f] rounded-lg shadow-lg p-6"
                                 >
                                     <h2 className="text-xl font-semibold mb-0">
                                         {step.title}
@@ -73,7 +73,7 @@ export default function ScrollableRoadmap() {
 
                 {/* Right Navigation */}
                 <div className="flex flex-col items-start">
-                    <h2 className="text-2xl font-bold  w-full text-start">Our Solutions</h2>
+                    <h2 className="text-2xl font-bold  w-full text-start">Our <span className='text-primary'>Solutions</span></h2>
                     <p className=" w-[500px] text-justify mb-4">{roadmapData.find(section => section.id === activeSection)?.desc || 'Select a solution to see its details.'}</p>
                     <div className="flex flex-col items-end space-y-4 w-full max-w-[300px] ">
                         {roadmapData.map((section) => (
@@ -87,7 +87,7 @@ export default function ScrollableRoadmap() {
                                         : "bg-white hover:bg-yellow-50"
                                 )}
                             >
-                                <span className="font-medium">{section.title}</span>
+                                <span className="font-medium text-black">{section.title}</span>
                             </button>
                         ))}
                     </div>

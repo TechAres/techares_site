@@ -59,7 +59,10 @@ export const homeAboutData = {
     },
   },
   sectionHeading: {
-    title: 'Top-Notch Web Development Company',
+    title: (<>
+      <span className='dark:text-primary'>Top-Notch </span>
+      <span>Web Development Company</span>
+    </>),
     description:
       'Techares is a premier software development company committed to crafting robust, scalable, and user-focused digital solutions. By leveraging innovative technologies, we empower businesses to achieve their goals through intelligent, efficient, and tailored applications. With experienced professionals and a customer-centric approach, Techares is your partner in turning ambitious ideas into tangible success.',
   },

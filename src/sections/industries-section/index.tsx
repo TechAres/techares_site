@@ -57,7 +57,7 @@ export default function IndustriesGrid({ industries }: IndustriesGridProps) {
                     className="text-center mb-12"
                 >
                     <h2 className="text-2xl font-bold text-gray-50 mb-0">
-                        Industries We Serve
+                        <span className='text-primary'>Industries</span> We Serve
                     </h2>
                     <p className="text-l text-gray-50 max-w-2xl mx-auto">
                         Empowering businesses across various sectors with innovative solutions

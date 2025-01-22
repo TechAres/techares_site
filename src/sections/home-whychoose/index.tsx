@@ -1,8 +1,11 @@
 import { homeWhyChooseData } from '@/data/home-whychoose';
 import { ImageProps } from '@/src/common-types';
+import { Button } from '@/src/components/button';
 import { Container } from '@/src/components/container';
+import { CustomLink } from '@/src/components/custom-link';
 import { SectionHeading } from '@/src/components/section-heading';
 import { SectionHeadingWithoutStylingProps } from '@/src/components/section-heading/interface';
+import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
 
 import patternOne from 'public/assets/images/about/pattern-1.png';
@@ -22,6 +25,9 @@ export interface HomeWhyChooseProps {
   description?: string;
 }
 
+const listItems = ["First Item", "Second Item", "Third Item"];
+
+
 export function WhyChooseSection() {
   const { images, sectionHeading, keyPoints, description } = homeWhyChooseData;
   return (
@@ -32,7 +38,7 @@ export function WhyChooseSection() {
           <div className="lg:order-1" data-aos="fade-left" data-aos-delay="200">
             {/* <SectionHeading {...sectionHeading} /> */}
             <h2 className="font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
-              Why Choose Techares?
+              <span className='text-primary'>Why Choose</span> Techares?
             </h2>
             <h6 className="text-sky-500">
 
@@ -45,6 +51,34 @@ export function WhyChooseSection() {
               Our customer-first approach ensures every project aligns perfectly with your goals. We embrace cutting-edge technologies to provide tailored, scalable solutions that grow with your business. Beyond development, we focus on end-to-end support, from initial consultations to post-launch maintenance, ensuring your success every step of the way.
               Partner with Techares for a commitment to quality, reliable execution, and a shared passion for excellence. Together, let’s bring your ideas to life and drive your business forward.
             </p>
+
+            <ul className="mt-6 space-y-1 list-disc list-inside text-gray-200">
+              {listItems.map((item, index) => (
+                <li key={index} className="text-sm font-medium">
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <div className='mt-6'>
+              <Button asChild className={cn('rounded-full')}>
+                <CustomLink
+                  aria-label="Discover More"
+                  href="/"
+
+                >
+                  <span>Discover More</span>
+                  <svg
+                    width={28}
+                    height={9}
+                    viewBox="0 0 28 9"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M27.7911 5.02543C27.9863 4.83016 27.9863 4.51358 27.7911 4.31832L24.6091 1.13634C24.4138 0.941077 24.0972 0.941077 23.902 1.13634C23.7067 1.3316 23.7067 1.64818 23.902 1.84345L26.7304 4.67187L23.902 7.5003C23.7067 7.69556 23.7067 8.01214 23.902 8.20741C24.0972 8.40267 24.4138 8.40267 24.6091 8.20741L27.7911 5.02543ZM0.4375 5.17188L27.4375 5.17187L27.4375 4.17187L0.4375 4.17188L0.4375 5.17188Z" />
+                  </svg>
+                </CustomLink>
+              </Button>
+            </div>
           </div>
 
           {/* Images  */}

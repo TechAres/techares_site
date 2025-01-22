@@ -4,6 +4,7 @@ export const services: Service[] = [
     {
         id: 'custom-software',
         name: 'Custom Software Development',
+        logo: '/assets/images/landing/whychoose.png',
         content: "We specialize in creating tailored software solutions to meet your unique business requirements. Our process focuses on delivering secure, scalable, and feature-rich products designed to adapt to your growth.",
         details: [
             {
@@ -31,6 +32,7 @@ export const services: Service[] = [
     {
         id: 'it-consultant',
         name: 'IT Consultancy & Development Services',
+        logo: '/assets/images/landing/whychoose.png',
         content: "Our IT consulting services help businesses leverage technology to achieve their goals. From strategic planning to execution, we offer solutions tailored to your specific challenges and growth opportunities.",
         details: [
             {
@@ -58,6 +60,7 @@ export const services: Service[] = [
     {
         id: 'digital-mark',
         name: 'Digital Marketing',
+        logo: '/assets/images/landing/whychoose.png',
         content: "Our digital marketing services are designed to boost your online visibility, attract the right audience, and generate measurable results through innovative, data-driven strategies.",
         details: [
             {
@@ -85,6 +88,7 @@ export const services: Service[] = [
     {
         id: "hire-dev",
         name: "Hire Developers",
+        logo: '/assets/images/landing/whychoose.png',
         content: "Techares provides access to a pool of skilled developers to meet your project requirements. Our exper ts work seamlessly as part of your team to ensure high-quality results.",
         details: [
             {
@@ -113,6 +117,7 @@ export const services: Service[] = [
     {
         id: 'blockchain-dev',
         name: 'Blockchain & Cryptocurrency Development',
+        logo: '/assets/images/landing/whychoose.png',
         content: "Harness the transformative power of blockchain technology to create secure, transparent, and efficient solutions for your business. Our expertise spans across various blockchain applications tailored to your needs.",
         details: [
             {
@@ -140,6 +145,7 @@ export const services: Service[] = [
     {
         id: 'ai-ml',
         name: 'AI & Machine Learning',
+        logo: '/assets/images/landing/whychoose.png',
         content: "We deliver AI-driven solutions that empower businesses to make smarter decisions, improve efficiency, and enhance user experiences through predictive and adaptive systems.",
         details: [
             {
